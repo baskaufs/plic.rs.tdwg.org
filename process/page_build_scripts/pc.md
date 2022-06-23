@@ -57,6 +57,7 @@ Biodiversity Information Standards (TDWG).
 
 **Classes**
 
+[plic:AncillaryData](#plic_AncillaryData) |
 [plic:AnnualCycleAtomized](#plic_AnnualCycleAtomized) |
 [plic:AnnualCycles](#plic_AnnualCycles) |
 [plic:BaseElements](#plic_BaseElements) |
@@ -94,7 +95,6 @@ Biodiversity Information Standards (TDWG).
 [plic:Reproduction](#plic_Reproduction) |
 [plic:Revision](#plic_Revision) |
 [plic:ScientificName](#plic_ScientificName) |
-[plic:ScientificName](#plic_ScientificName) |
 [plic:SeasonOfAvailability-Use](#plic_SeasonOfAvailability-Use) |
 [plic:SourceOfInformation](#plic_SourceOfInformation) |
 [plic:SpeciesInteraction](#plic_SpeciesInteraction) |
@@ -103,10 +103,9 @@ Biodiversity Information Standards (TDWG).
 [plic:ThreatStatus](#plic_ThreatStatus) |
 [plic:Uses](#plic_Uses) |
 [plic:UsesAtomized](#plic_UsesAtomized) |
-[plic:ancillaryData
-](#plic_ancillaryData
-) |
-[plic:associatedPartyType](#plic_associatedPartyType) |
+[plic:UsesManagementAndConservation](#plic_UsesManagementAndConservation) |
+[plic:associatedParty](#plic_associatedParty) |
+[plic:citation](#plic_citation) |
 [plic:synonymsAtomized](#plic_synonymsAtomized) |
 [plic:synonymsType](#plic_synonymsType) |
 [plic:taxonomicalDescription](#plic_taxonomicalDescription) 
@@ -123,13 +122,10 @@ Biodiversity Information Standards (TDWG).
 [plic:Revision](#plic_Revision) |
 [plic:TaxonRecord](#plic_TaxonRecord) |
 [plic:abstract](#plic_abstract) |
-[plic:ancillaryData
-](#plic_ancillaryData
-) |
 [plic:audiencesUnstructured](#plic_audiencesUnstructured) |
+[plic:citation](#plic_citation) |
 [plic:created](#plic_created) |
 [plic:dateStamp](#plic_dateStamp) |
-[plic:language](#plic_language) |
 [plic:language](#plic_language) |
 [plic:resourceLogoUrl](#plic_resourceLogoUrl) |
 [plic:taxonRecordID](#plic_taxonRecordID) |
@@ -182,8 +178,6 @@ Biodiversity Information Standards (TDWG).
 
 [plic:LifeCycle](#plic_LifeCycle) |
 [plic:lifeCycleAtomized](#plic_lifeCycleAtomized) |
-[plic:lifeCycleUnstructured](#plic_lifeCycleUnstructured) |
-[plic:lifeFormAtomized](#plic_lifeFormAtomized) |
 [plic:lifeFormUnstructured](#plic_lifeFormUnstructured) 
 
 **Reproduction**
@@ -197,15 +191,16 @@ Biodiversity Information Standards (TDWG).
 [plic:AnnualCycleAtomized](#plic_AnnualCycleAtomized) |
 [plic:AnnualCycleUnstructured](#plic_AnnualCycleUnstructured) |
 [plic:AnnualCycles](#plic_AnnualCycles) |
-[plic:EndTimeInterval ](#plic_EndTimeInterval ) |
+[plic:EndTimeInterval](#plic_EndTimeInterval) |
 [plic:Event](#plic_Event) |
 [plic:StartTimeInterval](#plic_StartTimeInterval) 
 
 **Feeding**
 
 [plic:Feeding](#plic_Feeding) |
-[plic:Strategy](#plic_Strategy) |
-[plic:StrategyRemarks](#plic_StrategyRemarks) |
+[plic:TrophicStrategy](#plic_TrophicStrategy) |
+[plic:TrophicStrategyRemarks](#plic_TrophicStrategyRemarks) |
+[plic:Type](#plic_Type) |
 [plic:feedingAtomized](#plic_feedingAtomized) |
 [plic:feedingUnstructured](#plic_feedingUnstructured) 
 
@@ -216,8 +211,6 @@ Biodiversity Information Standards (TDWG).
 [plic:Distance](#plic_Distance) |
 [plic:Purpose](#plic_Purpose) |
 [plic:StructureDispersed](#plic_StructureDispersed) |
-[plic:Type](#plic_Type) |
-[plic:Type](#plic_Type) |
 [plic:Type](#plic_Type) 
 
 **Behavior**
@@ -228,9 +221,9 @@ Biodiversity Information Standards (TDWG).
 
 **Interactions**
 
-[plic:InteractionSpeciesType](#plic_InteractionSpeciesType) |
 [plic:Interactions](#plic_Interactions) |
 [plic:SpeciesInteraction](#plic_SpeciesInteraction) |
+[plic:SpeciesInteractionType](#plic_SpeciesInteractionType) |
 [plic:interactionAtomized](#plic_interactionAtomized) |
 [plic:interactionUnstructured](#plic_interactionUnstructured) 
 
@@ -276,7 +269,6 @@ Biodiversity Information Standards (TDWG).
 [plic:citation](#plic_citation) |
 [plic:countryCode](#plic_countryCode) |
 [plic:county](#plic_county) |
-[plic:county](#plic_county) |
 [plic:distribution](#plic_distribution) |
 [plic:endValidDate](#plic_endValidDate) |
 [plic:harmful](#plic_harmful) |
@@ -284,6 +276,7 @@ Biodiversity Information Standards (TDWG).
 [plic:impactTarget](#plic_impactTarget) |
 [plic:invasivenessAtomized](#plic_invasivenessAtomized) |
 [plic:invasivenessUnstructured](#plic_invasivenessUnstructured) |
+[plic:language](#plic_language) |
 [plic:localityName](#plic_localityName) |
 [plic:localityType](#plic_localityType) |
 [plic:memo](#plic_memo) |
@@ -295,7 +288,6 @@ Biodiversity Information Standards (TDWG).
 [plic:rateOfSpread](#plic_rateOfSpread) |
 [plic:regulatoryListing](#plic_regulatoryListing) |
 [plic:startValidDate](#plic_startValidDate) |
-[plic:stateProvince](#plic_stateProvince) |
 [plic:stateProvince](#plic_stateProvince) |
 [plic:trend](#plic_trend) |
 [plic:vector](#plic_vector) 
@@ -315,16 +307,16 @@ Biodiversity Information Standards (TDWG).
 [plic:HabitatAndDistribution](#plic_HabitatAndDistribution) |
 [plic:Habitats](#plic_Habitats) |
 [plic:country](#plic_country) |
+[plic:county](#plic_county) |
 [plic:endemicAtomized](#plic_endemicAtomized) |
 [plic:endemicUnstructured](#plic_endemicUnstructured) |
-[plic:geographicEntity
-](#plic_geographicEntity
-) |
+[plic:geographicEntity](#plic_geographicEntity) |
 [plic:habitatAndDistributionUnstructured](#plic_habitatAndDistributionUnstructured) |
 [plic:habitatAtomized](#plic_habitatAtomized) |
 [plic:habitatUnstructured](#plic_habitatUnstructured) |
 [plic:locality](#plic_locality) |
 [plic:municipality](#plic_municipality) |
+[plic:stateProvince](#plic_stateProvince) |
 [plic:temporalCoverage](#plic_temporalCoverage) 
 
 **Demography And Threat**
@@ -366,6 +358,7 @@ Biodiversity Information Standards (TDWG).
 [plic:Status](#plic_Status) |
 [plic:ThreatCategory](#plic_ThreatCategory) |
 [plic:ThreatStatus](#plic_ThreatStatus) |
+[plic:Type](#plic_Type) |
 [plic:demographyAndThreat](#plic_demographyAndThreat) |
 [plic:demographyAndThreatUnstructured](#plic_demographyAndThreatUnstructured) |
 [plic:directThreatUnstructured](#plic_directThreatUnstructured) |
@@ -391,7 +384,7 @@ Biodiversity Information Standards (TDWG).
 [plic:ManagementAndConservationUnstructured](#plic_ManagementAndConservationUnstructured) |
 [plic:ManagementPlan](#plic_ManagementPlan) |
 [plic:MeansOfApplication-Administration](#plic_MeansOfApplication-Administration) |
-[plic:Objetives](#plic_Objetives) |
+[plic:Objectives](#plic_Objectives) |
 [plic:Organisms](#plic_Organisms) |
 [plic:PartUsed](#plic_PartUsed) |
 [plic:Potential](#plic_Potential) |
@@ -402,7 +395,7 @@ Biodiversity Information Standards (TDWG).
 [plic:SourceOfInformation](#plic_SourceOfInformation) |
 [plic:Use-Value](#plic_Use-Value) |
 [plic:UseNotes](#plic_UseNotes) |
-[plic:UseTypeAtomized](#plic_UseTypeAtomized) |
+[plic:UseType](#plic_UseType) |
 [plic:Users](#plic_Users) |
 [plic:Uses](#plic_Uses) |
 [plic:UsesAtomized](#plic_UsesAtomized) |
@@ -413,7 +406,7 @@ Biodiversity Information Standards (TDWG).
 
 **Associated Party**
 
-[plic:associatedPartyType](#plic_associatedPartyType) 
+[plic:associatedParty](#plic_associatedParty) 
 
 **References**
 
@@ -428,8 +421,8 @@ Biodiversity Information Standards (TDWG).
 
 **Classes**
 
-[Ancillary Data](#plic_ancillaryData
-) |
+[Ancillary Data](#plic_AncillaryData) |
+[Ancillary Data](#plic_citation) |
 [Annual Cycle](#plic_AnnualCycles) |
 [Atomized Annual Cycle](#plic_AnnualCycleAtomized) |
 [Atomized Direct Threat](#plic_DirectThreatAtomized) |
@@ -462,13 +455,13 @@ Biodiversity Information Standards (TDWG).
 [References](#plic_References) |
 [Revision](#plic_Revision) |
 [Scientific Name](#plic_ScientificName) |
-[Scientific Name](#plic_ScientificName) |
 [Season of Availability-Use](#plic_SeasonOfAvailability-Use) |
 [Source of Information](#plic_SourceOfInformation) |
 [Species Interaction ](#plic_SpeciesInteraction) |
 [Taxon Record](#plic_TaxonRecord) |
 [Uses](#plic_Uses) |
-[associatedPartyType](#plic_associatedPartyType) |
+[Uses Management and Conservation](#plic_UsesManagementAndConservation) |
+[associatedParty](#plic_associatedParty) |
 [atomized migratory](#plic_MigratoryAtomized) |
 [atomized synonyms](#plic_synonymsAtomized) |
 [dataset](#plic_Dataset) |
@@ -484,8 +477,7 @@ Biodiversity Information Standards (TDWG).
 **Metadata**
 
 [Abstract](#plic_abstract) |
-[Ancillary Data](#plic_ancillaryData
-) |
+[Ancillary Data](#plic_citation) |
 [Audience](#plic_Audience) |
 [Base Elements](#plic_BaseElements) |
 [Created](#plic_created) |
@@ -515,6 +507,7 @@ Biodiversity Information Standards (TDWG).
 [Nomenclature and Classification](#plic_NomenclatureAndClassification) |
 [Nomenclature and Classification Unstructured](#plic_NomenclatureAndClassificationUnstructured) |
 [Scientific Name](#plic_ScientificName) |
+[Scientific name](#plic_ScientificName) |
 [Synonym name ](#plic_SynonymName ) |
 [Synonym status](#plic_SynonymStatus) |
 [Used By](#plic_UsedBy) |
@@ -524,7 +517,7 @@ Biodiversity Information Standards (TDWG).
 [synonyms Atomized Type](#plic_synonymsAtomizedType) |
 [synonyms type](#plic_synonymsType) |
 [target audiences](#plic_targetAudiences) |
-[taxon recordname](#plic_taxonRecordName) |
+[taxon record name](#plic_taxonRecordName) |
 [unstructured common names](#plic_commonNamesUnstructured) |
 [unstructured synonyms](#plic_synonymsUnstructured) 
 
@@ -547,9 +540,7 @@ Biodiversity Information Standards (TDWG).
 **Life Cycle**
 
 [Atomized Life Cycle](#plic_lifeCycleAtomized) |
-[Atomized Life Form](#plic_lifeFormAtomized) |
 [Life Cycle](#plic_LifeCycle) |
-[Unstructured Life Cycle](#plic_lifeCycleUnstructured) |
 [Unstructured Life Form](#plic_lifeFormUnstructured) 
 
 **Reproduction**
@@ -562,7 +553,7 @@ Biodiversity Information Standards (TDWG).
 
 [Annual Cycle](#plic_AnnualCycles) |
 [Atomized Annual Cycle](#plic_AnnualCycleAtomized) |
-[End Time Interval](#plic_EndTimeInterval ) |
+[End Time Interval](#plic_EndTimeInterval) |
 [Event](#plic_Event) |
 [Start Time Interval](#plic_StartTimeInterval) |
 [Unstructured Annual Cycle](#plic_AnnualCycleUnstructured) 
@@ -571,8 +562,9 @@ Biodiversity Information Standards (TDWG).
 
 [Atomized Feeding](#plic_feedingAtomized) |
 [Feeding](#plic_Feeding) |
-[Trophic Strategy](#plic_Strategy) |
-[Trophic Strategy Remarks](#plic_StrategyRemarks) |
+[Trophic Strategy](#plic_TrophicStrategy) |
+[Trophic Strategy Remarks](#plic_TrophicStrategyRemarks) |
+[Type](#plic_Type) |
 [Unstructured Feeding](#plic_feedingUnstructured) 
 
 **Dispersal**
@@ -595,7 +587,7 @@ Biodiversity Information Standards (TDWG).
 [Atomized Interaction](#plic_interactionAtomized) |
 [Interactions](#plic_Interactions) |
 [Species Interaction ](#plic_SpeciesInteraction) |
-[Species Interaction Type](#plic_InteractionSpeciesType) |
+[Species Interaction Type](#plic_SpeciesInteractionType) |
 [Unstructured Interaction](#plic_interactionUnstructured) 
 
 **Molecular Data**
@@ -644,6 +636,7 @@ Biodiversity Information Standards (TDWG).
 [Impact Mechanism](#plic_impactMechanism) |
 [Impact Target](#plic_impactTarget) |
 [Invasiveness](#plic_Invasiveness) |
+[Language](#plic_language) |
 [Locality Name](#plic_localityName) |
 [Locality Type](#plic_localityType) |
 [Memo](#plic_memo) |
@@ -668,6 +661,7 @@ Biodiversity Information Standards (TDWG).
 [Atomized Endemic](#plic_endemicAtomized) |
 [Atomized Habitat](#plic_habitatAtomized) |
 [Country](#plic_country) |
+[County](#plic_county) |
 [Distribution](#plic_Distribution) |
 [Distribution Scope](#plic_DistributionScope) |
 [Distribution Scope Type](#plic_DistributionScopeType) |
@@ -680,6 +674,7 @@ Biodiversity Information Standards (TDWG).
 [Habitats](#plic_Habitats) |
 [Locality](#plic_locality) |
 [Municipality ](#plic_municipality) |
+[State Province ](#plic_stateProvince) |
 [Temporal Coverage](#plic_temporalCoverage) |
 [Unstructured Distribution](#plic_DistributionUnstructured) |
 [Unstructured Endemic](#plic_endemicUnstructured) |
@@ -723,6 +718,7 @@ Biodiversity Information Standards (TDWG).
 [Size](#plic_Size) |
 [Status](#plic_Status) |
 [Threat category](#plic_ThreatCategory) |
+[Type](#plic_Type) |
 [Unstructured Demography And Threat](#plic_demographyAndThreatUnstructured) |
 [Unstructured Direct Threat](#plic_directThreatUnstructured) |
 [Unstructured Legislation](#plic_legislationUnstructured) |
@@ -750,7 +746,7 @@ Biodiversity Information Standards (TDWG).
 [Management and Conservation Type](#plic_ManagementAndConservationType) |
 [Management and Conservation Unstructured](#plic_ManagementAndConservationUnstructured) |
 [Means of Application-Administration](#plic_MeansOfApplication-Administration) |
-[Objetives](#plic_Objetives) |
+[Objectives](#plic_Objectives) |
 [Organisms](#plic_Organisms) |
 [Part Used](#plic_PartUsed) |
 [Potential](#plic_Potential) |
@@ -761,7 +757,7 @@ Biodiversity Information Standards (TDWG).
 [Source of Information](#plic_SourceOfInformation) |
 [Unstructured Uses](#plic_UsesUnstructured) |
 [Use Notes](#plic_UseNotes) |
-[Use Type Atomized](#plic_UseTypeAtomized) |
+[Use Type](#plic_UseType) |
 [Use-Value](#plic_Use-Value) |
 [Users](#plic_Users) |
 [Uses](#plic_Uses) |
@@ -771,7 +767,7 @@ Biodiversity Information Standards (TDWG).
 
 **Associated Party**
 
-[associatedPartyType](#plic_associatedPartyType) 
+[associatedParty](#plic_associatedParty) 
 
 **References**
 
@@ -796,11 +792,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Audience-2022-06-14">http://rs.tdwg.org/plic/terms/version/Audience-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Audience-2022-06-22">http://rs.tdwg.org/plic/terms/version/Audience-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -813,6 +809,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Notes</td>
 			<td>Predetermined list: 01. Expert (High). 02. Knowledgeable (Medium). 03. General (Low).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AncillaryData/audience</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -834,11 +834,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/BaseElements-2022-06-14">http://rs.tdwg.org/plic/terms/version/BaseElements-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/BaseElements-2022-06-22">http://rs.tdwg.org/plic/terms/version/BaseElements-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -847,6 +847,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>Basic information to identify the record.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/BaseElements</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -868,11 +872,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Dataset-2022-06-14">http://rs.tdwg.org/plic/terms/version/Dataset-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Dataset-2022-06-22">http://rs.tdwg.org/plic/terms/version/Dataset-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -885,6 +889,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Notes</td>
 			<td><a href="https://eml.ecoinformatics.org/schema/">https://eml.ecoinformatics.org/schema/</a></td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -906,11 +914,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Dataset_ID-2022-06-14">http://rs.tdwg.org/plic/terms/version/Dataset_ID-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Dataset_ID-2022-06-22">http://rs.tdwg.org/plic/terms/version/Dataset_ID-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -919,6 +927,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>An identifier for the dataset.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/Dataset_ID</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -940,11 +952,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Metadata-2022-06-14">http://rs.tdwg.org/plic/terms/version/Metadata-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Metadata-2022-06-22">http://rs.tdwg.org/plic/terms/version/Metadata-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -953,6 +965,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>Management: actions aimed at conserving or recovering species / Conservation: undertaken interventions designed to preserve species.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -974,11 +990,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/RecordMetadata-2022-06-14">http://rs.tdwg.org/plic/terms/version/RecordMetadata-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/RecordMetadata-2022-06-22">http://rs.tdwg.org/plic/terms/version/RecordMetadata-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -987,6 +1003,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>This element includes the information about the Version, Revision,the language and target audiences of the Taxon Record.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/RecordMetadata</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1008,11 +1028,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/References-2022-06-14">http://rs.tdwg.org/plic/terms/version/References-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/References-2022-06-22">http://rs.tdwg.org/plic/terms/version/References-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1020,7 +1040,7 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Term borrowed from EOL. It represents the references that an element could have, in one or more of the different format and schemas: BICI, CODEN,DOI, EISSN, HANDLE, ISBN, ISSN, LSID, OCLC, SICI, URL, URN</td>
+			<td>Term borrowed from EOL (EOL: referenceType). It represents the references that an element could have, in one or more of the different format and schemas: BICI, CODEN,DOI, EISSN, HANDLE, ISBN, ISSN, LSID, OCLC, SICI, URL, URN</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -1028,7 +1048,7 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Equivalent XPath</td>
-			<td>/root/another</td>
+			<td>/Dataset/Metadata/References</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1050,11 +1070,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Revision-2022-06-14">http://rs.tdwg.org/plic/terms/version/Revision-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Revision-2022-06-22">http://rs.tdwg.org/plic/terms/version/Revision-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1063,6 +1083,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>Creators, revision status and dates of the record.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/RecordMetadata/Revision</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1084,11 +1108,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/TaxonRecord-2022-06-14">http://rs.tdwg.org/plic/terms/version/TaxonRecord-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/TaxonRecord-2022-06-22">http://rs.tdwg.org/plic/terms/version/TaxonRecord-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1097,6 +1121,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>Container for all elements pertaining a certain view or instance of a taxon, for instance, Festuca glauca Vill. as in Flora iberica, or Panthera onca as in https://enciclovida.mx/especies/34460-panthera-onca.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1118,11 +1146,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/abstract-2022-06-14">http://rs.tdwg.org/plic/terms/version/abstract-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/abstract-2022-06-22">http://rs.tdwg.org/plic/terms/version/abstract-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1130,57 +1158,19 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A brief summary of the most relevant or attractive features of this taxón to the general public.  Could point to any kind of information. </td>
+			<td>A brief summary of the most relevant or attractive features of this taxon to the general public.  Could point to any kind of information. </td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Example: Blue whale is the largest mammal in the world.
-</td>
+			<td>Example: Blue whale is the largest mammal in the world. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Abstract</td>
 		</tr>
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="plic_ancillaryData
-"></a>Term Name  plic:ancillaryData
-</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/ancillaryData
-">http://rs.tdwg.org/plic/terms/ancillaryData
-</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ancillaryData
--2022-06-14">http://rs.tdwg.org/plic/terms/version/ancillaryData
--2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Ancillary Data</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The AncillaryData element contains information that could be an image, an audio, a list of references, a list of agents, rights, licenses...related with the element that belongs. It`s a redefinition of DataObject element from EOL scheme.
-</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Class</td>
 		</tr>
 	</tbody>
 </table>
@@ -1198,11 +1188,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/audiencesUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/audiencesUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/audiencesUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/audiencesUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1213,8 +1203,50 @@ Basic information to identify the record; basic information to identify the reco
 			<td>List audience codes separated by means of comma or /.</td>
 		</tr>
 		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AudiencesUnstructured</td>
+		</tr>
+		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="plic_citation"></a>Term Name  plic:citation</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/citation">http://rs.tdwg.org/plic/terms/citation</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2022-06-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/citation-2022-06-22">http://rs.tdwg.org/plic/terms/version/citation-2022-06-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Ancillary Data</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The AncillaryData element contains information that could be an image, an audio, a list of references, a list of agents, rights, licenses...related with the element that belongs. It's a redefinition of DataObject element from EOL scheme. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/citation</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
 		</tr>
 	</tbody>
 </table>
@@ -1232,11 +1264,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/created-2022-06-14">http://rs.tdwg.org/plic/terms/version/created-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/created-2022-06-22">http://rs.tdwg.org/plic/terms/version/created-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1244,11 +1276,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The date on which the resource was created.</td>
+			<td>The date on which the resource was created. It is a DC term</td>
 		</tr>
 		<tr>
 			<td>Equivalent XPath</td>
-			<td>/root/something/more<br/>/root/something/else</td>
+			<td>/AncillaryData/created</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1270,11 +1302,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/dateStamp-2022-06-14">http://rs.tdwg.org/plic/terms/version/dateStamp-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/dateStamp-2022-06-22">http://rs.tdwg.org/plic/terms/version/dateStamp-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1285,38 +1317,8 @@ Basic information to identify the record; basic information to identify the reco
 			<td>The date the metadata document was created or modified.</td>
 		</tr>
 		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="plic_language"></a>Term Name  plic:language</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/language">http://rs.tdwg.org/plic/terms/language</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/language-2022-06-14">http://rs.tdwg.org/plic/terms/version/language-2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Language</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The language of the taxon record, according to ISO 639.</td>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/dateStamp</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1338,11 +1340,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/language-2022-06-14">http://rs.tdwg.org/plic/terms/version/language-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/language-2022-06-22">http://rs.tdwg.org/plic/terms/version/language-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1351,6 +1353,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>The language of the taxon record, according to ISO 639.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AncillaryData/language</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1372,11 +1378,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/resourceLogoUrl-2022-06-14">http://rs.tdwg.org/plic/terms/version/resourceLogoUrl-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/resourceLogoUrl-2022-06-22">http://rs.tdwg.org/plic/terms/version/resourceLogoUrl-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1385,6 +1391,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>The URI of an icon/logo symbolizing the project.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/resourceLogoUrl</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1406,11 +1416,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonRecordID-2022-06-14">http://rs.tdwg.org/plic/terms/version/taxonRecordID-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonRecordID-2022-06-22">http://rs.tdwg.org/plic/terms/version/taxonRecordID-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1419,6 +1429,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>Unique identifier of the record within the database.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/BaseElements/TaxonRecordID</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1440,11 +1454,11 @@ Basic information to identify the record; basic information to identify the reco
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/version-2022-06-14">http://rs.tdwg.org/plic/terms/version/version-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/version-2022-06-22">http://rs.tdwg.org/plic/terms/version/version-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1453,6 +1467,10 @@ Basic information to identify the record; basic information to identify the reco
 		<tr>
 			<td>Definition</td>
 			<td>Number and date of the current version.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/RecordMetadata/Version</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1477,11 +1495,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Hierarchy-2022-06-14">http://rs.tdwg.org/plic/terms/version/Hierarchy-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Hierarchy-2022-06-22">http://rs.tdwg.org/plic/terms/version/Hierarchy-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1494,6 +1512,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Notes</td>
 			<td>Option: fill all or principal ranks and optionally provide keys.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/Hierarchy</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1515,11 +1537,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Language-2022-06-14">http://rs.tdwg.org/plic/terms/version/Language-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Language-2022-06-22">http://rs.tdwg.org/plic/terms/version/Language-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1527,14 +1549,15 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Language used to write the species information, ISO 639-2 according to GBIF Metadata Profile.
-
-</td>
+			<td>Language of the common language name expresed in ISO 639-2 according to GBIF Metadata Profile.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AncillaryData/language</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
-</td>
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property </td>
 		</tr>
 	</tbody>
 </table>
@@ -1552,11 +1575,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Name-2022-06-14">http://rs.tdwg.org/plic/terms/version/Name-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Name-2022-06-22">http://rs.tdwg.org/plic/terms/version/Name-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1564,8 +1587,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The name of the common name.
-</td>
+			<td>The name of the common name. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesAtomized/Name</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1587,11 +1613,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/NomenclatureAndClassification-2022-06-14">http://rs.tdwg.org/plic/terms/version/NomenclatureAndClassification-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/NomenclatureAndClassification-2022-06-22">http://rs.tdwg.org/plic/terms/version/NomenclatureAndClassification-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1599,7 +1625,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Structured Information on the taxon's  name, synomyms, nomenclatural status, common names, and taxonomic hierarchy; plus  misc. details and ancillary data.</td>
+			<td>Structured Information on the taxon name, synonyms, nomenclatural status, common names, and taxonomic hierarchy; plus  misc. details and ancillary data.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1621,11 +1651,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/NomenclatureAndClassificationUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/NomenclatureAndClassificationUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/NomenclatureAndClassificationUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/NomenclatureAndClassificationUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1633,7 +1663,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Information on the taxon's  name, synomyms, nomenclatural status, common names, and taxonomic hierarchy; plus  misc. details and ancillary data.</td>
+			<td>Information on the taxon name, synonyms, nomenclatural status, common names, and taxonomic hierarchy; plus  misc. details and ancillary data.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/NomenclatureAndClassificationUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1655,11 +1689,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ScientificName-2022-06-14">http://rs.tdwg.org/plic/terms/version/ScientificName-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ScientificName-2022-06-22">http://rs.tdwg.org/plic/terms/version/ScientificName-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1667,7 +1701,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Canonical name enforcing strict inclusion of only nomenclatural information - not taxonomic information. The name entered here must comply with rules and recommendations of the international nomenclatural code pertaining to the organisms (Zoological, Botanical, of Cultivated Pants, or Bacteriological).</td>
+			<td>Canonical name enforcing strict inclusion of only nomenclatural information - not taxonomic information. The name entered here must comply with rules and recommendations of the international nomenclatural code pertaining to the organisms (Zoological, Botanical, of Cultivated Plants, or Bacteriological).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/TaxonRecordName/ScientificName</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1689,23 +1727,27 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ScientificName-2022-06-14">http://rs.tdwg.org/plic/terms/version/ScientificName-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ScientificName-2022-06-22">http://rs.tdwg.org/plic/terms/version/ScientificName-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Scientific Name</td>
+			<td>Scientific name</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Canonical name enforcing strict inclusion of only nomenclatural information - not taxonomic information. The name entered here must comply with rules and recommendations of the international nomenclatural code pertaining to the organisms (Zoological, Botanical, of Cultivated Pants, or Bacteriological).</td>
+			<td>Canonical name enforcing strict inclusion of only nomenclatural information - not taxonomic information. The name entered here must comply with rules and recommendations of the international nomenclatural code pertaining to the organisms (Zoological, Botanical, of Cultivated Plants, or Bacteriological).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/TaxonRecordName/ScientificName</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>Class</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -1723,11 +1765,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/SynonymName -2022-06-14">http://rs.tdwg.org/plic/terms/version/SynonymName -2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/SynonymName -2022-06-22">http://rs.tdwg.org/plic/terms/version/SynonymName -2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1740,6 +1782,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Notes</td>
 			<td>tcs: ScientificName. An object that represents a single scientific biological name that either is, or appears to be, governed by one of the biological codes of nomenclature. These are not taxa. Taxa, whether accepted or not, are represented by TaxonConcept objects. Vernacular names are also dealt with under taxon concepts</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/Synonyms/SynonymsAtomized/SynonymName</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1761,11 +1807,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/SynonymStatus-2022-06-14">http://rs.tdwg.org/plic/terms/version/SynonymStatus-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/SynonymStatus-2022-06-22">http://rs.tdwg.org/plic/terms/version/SynonymStatus-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1778,6 +1824,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Notes</td>
 			<td>dc:nomenclaturalStatus. <a href="http://rs.tdwg.org/dwc/terms/index.htm#nomenclaturalStatus">http://rs.tdwg.org/dwc/terms/index.htm#nomenclaturalStatus</a></td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/Synonyms/SynonymsAtomized/SynonymStatus</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1799,11 +1849,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Synonyms-2022-06-14">http://rs.tdwg.org/plic/terms/version/Synonyms-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Synonyms-2022-06-22">http://rs.tdwg.org/plic/terms/version/Synonyms-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1812,6 +1862,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Definition</td>
 			<td>Different names for this taxon.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/Synonyms</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1833,11 +1887,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/UsedBy-2022-06-14">http://rs.tdwg.org/plic/terms/version/UsedBy-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/UsedBy-2022-06-22">http://rs.tdwg.org/plic/terms/version/UsedBy-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1845,16 +1899,15 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Sometimes names used by one group of people are adopted by another.
-
-</td>
+			<td>Sometimes names used by one group of people are adopted by another.  </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesAtomized/UsedBy</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
-
-
-</td>
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property   </td>
 		</tr>
 	</tbody>
 </table>
@@ -1872,11 +1925,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/UsedIn-2022-06-14">http://rs.tdwg.org/plic/terms/version/UsedIn-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/UsedIn-2022-06-22">http://rs.tdwg.org/plic/terms/version/UsedIn-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1884,14 +1937,15 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Location where de common name is used.
-
-</td>
+			<td>Location where the common name is used. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesAtomized/UsedIn</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
-</td>
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property </td>
 		</tr>
 	</tbody>
 </table>
@@ -1909,11 +1963,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/commonNames-2022-06-14">http://rs.tdwg.org/plic/terms/version/commonNames-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/commonNames-2022-06-22">http://rs.tdwg.org/plic/terms/version/commonNames-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1921,8 +1975,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The name of the common name.
-</td>
+			<td>A list of common names, in alphabetic order, optionally followed by language and region where it is used. If language or region is omitted, it is assumed to be unknown.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1944,11 +2001,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/commonNamesAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/commonNamesAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/commonNamesAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/commonNamesAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1956,9 +2013,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>commonNames element in structured format.
-
-</td>
+			<td>commonNames element in structured format.  </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1980,11 +2039,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/commonNamesUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/commonNamesUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/commonNamesUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/commonNamesUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1993,6 +2052,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Definition</td>
 			<td>CommonNames element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2014,11 +2077,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/detailAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/detailAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/detailAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/detailAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2027,6 +2090,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Definition</td>
 			<td>MiscDetail element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/MiscDetails/DetailAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2048,11 +2115,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/detailUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/detailUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/detailUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/detailUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2061,6 +2128,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Definition</td>
 			<td>MiscDetail element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/MiscDetails/DetailUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2082,11 +2153,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/synonymsAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/synonymsAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/synonymsAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/synonymsAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2099,6 +2170,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Notes</td>
 			<td>tsc:ScientificName</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/Synonyms/SynonymsAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2120,11 +2195,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/synonymsAtomizedType-2022-06-14">http://rs.tdwg.org/plic/terms/version/synonymsAtomizedType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/synonymsAtomizedType-2022-06-22">http://rs.tdwg.org/plic/terms/version/synonymsAtomizedType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2158,11 +2233,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/synonymsType-2022-06-14">http://rs.tdwg.org/plic/terms/version/synonymsType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/synonymsType-2022-06-22">http://rs.tdwg.org/plic/terms/version/synonymsType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2196,11 +2271,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/synonymsUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/synonymsUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/synonymsUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/synonymsUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2209,6 +2284,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Definition</td>
 			<td>list of synonyms elements in a text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/Synonyms/SynonymsUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2230,11 +2309,11 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/targetAudiences-2022-06-14">http://rs.tdwg.org/plic/terms/version/targetAudiences-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/targetAudiences-2022-06-22">http://rs.tdwg.org/plic/terms/version/targetAudiences-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2247,6 +2326,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Usage</td>
 			<td>Biodiversity researchers, teachers and students, decision makers, professionals from another areas and general public.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/RecordMetadata/TargetAudiences</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2268,15 +2351,15 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonRecordName-2022-06-14">http://rs.tdwg.org/plic/terms/version/taxonRecordName-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonRecordName-2022-06-22">http://rs.tdwg.org/plic/terms/version/taxonRecordName-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>taxon recordname</td>
+			<td>taxon record name</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -2285,6 +2368,10 @@ Information on the taxons name, synomyms, nomenclatural status, common names, an
 		<tr>
 			<td>Notes</td>
 			<td>tsc:ScientificName</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NomenclatureAndClassification/TaxonRecordName</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2309,11 +2396,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/FullDescription-2022-06-14">http://rs.tdwg.org/plic/terms/version/FullDescription-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/FullDescription-2022-06-22">http://rs.tdwg.org/plic/terms/version/FullDescription-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2322,6 +2409,10 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		<tr>
 			<td>Definition</td>
 			<td>Complete and detailed account of the taxonomic and systematic characters, i.e. those that define and allow to recognize an organism.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/TaxonomicDescription/FullDescription</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2343,11 +2434,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/IdentificationKeys-2022-06-14">http://rs.tdwg.org/plic/terms/version/IdentificationKeys-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/IdentificationKeys-2022-06-22">http://rs.tdwg.org/plic/terms/version/IdentificationKeys-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2359,7 +2450,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Most printed keys have only two alternatives, so called dichotomous keys. A taxon includes a key or an identification of key in the subordinate taxons. If we are in a register of a genre, this register would include the keys of the species that this register includes, and if itÂ´s one specie, then it would include the key of the infraspecific rank (For plants: subspecies, variety forms)</td>
+			<td>Most printed keys have only two alternatives, so called dichotomous keys. A taxon includes a key or an identification of key in the subordinate taxa. If we are in a register of a genus, this register would include the keys of the species that this register includes, and if it's one specie, then it would include the key of the infraspecific rank (For plants: subspecies, variety forms)</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/TaxonomicDescription/IdentificationKeys</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2381,11 +2476,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Keys-2022-06-14">http://rs.tdwg.org/plic/terms/version/Keys-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Keys-2022-06-22">http://rs.tdwg.org/plic/terms/version/Keys-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2394,6 +2489,10 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		<tr>
 			<td>Definition</td>
 			<td>Dichotomic or multi-access key.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/TaxonomicDescription/IdentificationKeys/Keys</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2415,11 +2514,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/briefDescription-2022-06-14">http://rs.tdwg.org/plic/terms/version/briefDescription-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/briefDescription-2022-06-22">http://rs.tdwg.org/plic/terms/version/briefDescription-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2428,6 +2527,10 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		<tr>
 			<td>Definition</td>
 			<td>Brief description which reflect only the diagnostic characters, i.e. those that distinguish a taxon from other related or close taxa.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/BriefDescription</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2449,11 +2552,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/fullDescriptionAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/fullDescriptionAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/fullDescriptionAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/fullDescriptionAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2462,6 +2565,10 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		<tr>
 			<td>Definition</td>
 			<td>fullDescription element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/TaxonomicDescription/FullDescription/FullDescriptionAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2483,11 +2590,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/fullDescriptionUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/fullDescriptionUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/fullDescriptionUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/fullDescriptionUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2496,6 +2603,10 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		<tr>
 			<td>Definition</td>
 			<td>fullDescription element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/TaxonomicDescription/FullDescription/FullDescriptionUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2517,11 +2628,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/keys-2022-06-14">http://rs.tdwg.org/plic/terms/version/keys-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/keys-2022-06-22">http://rs.tdwg.org/plic/terms/version/keys-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2530,6 +2641,10 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		<tr>
 			<td>Definition</td>
 			<td>Dichotomic or multientrance keys.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/TaxonomicDescription/IdentificationKeys/Keys</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2551,11 +2666,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonomicDescriptionType-2022-06-14">http://rs.tdwg.org/plic/terms/version/taxonomicDescriptionType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonomicDescriptionType-2022-06-22">http://rs.tdwg.org/plic/terms/version/taxonomicDescriptionType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2566,13 +2681,8 @@ Description of Taxon: Brief description, Full description, Identification keys a
 			<td>Brief description, Full description, Identification keys and Ancillary Data.</td>
 		</tr>
 		<tr>
-			<td>Notes</td>
-			<td>Los "Type" los eliminamos ¿no? (FP)</td>
-		</tr>
-		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/2000/01/rdf-schema#Class
-</td>
+			<td>http://www.w3.org/2000/01/rdf-schema#Class </td>
 		</tr>
 	</tbody>
 </table>
@@ -2590,11 +2700,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonomicDescriptionUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/taxonomicDescriptionUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonomicDescriptionUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/taxonomicDescriptionUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2603,6 +2713,10 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		<tr>
 			<td>Definition</td>
 			<td>TaxonomicDescription element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/TaxonomicDescription/TaxonomicDescriptionUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2624,11 +2738,11 @@ Description of Taxon: Brief description, Full description, Identification keys a
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonomicalDescription-2022-06-14">http://rs.tdwg.org/plic/terms/version/taxonomicalDescription-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/taxonomicalDescription-2022-06-22">http://rs.tdwg.org/plic/terms/version/taxonomicalDescription-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2665,11 +2779,11 @@ General appearance. Characteristic mode of growth or occurrence associated to th
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/LifeForm-2022-06-14">http://rs.tdwg.org/plic/terms/version/LifeForm-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/LifeForm-2022-06-22">http://rs.tdwg.org/plic/terms/version/LifeForm-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2682,6 +2796,10 @@ General appearance. Characteristic mode of growth or occurrence associated to th
 		<tr>
 			<td>Notes</td>
 			<td>Example: tree, shrubs, herbs.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/LifeForm</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2706,11 +2824,11 @@ Life history of a living organism: The course of developmental changes in an org
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/LifeCycle-2022-06-14">http://rs.tdwg.org/plic/terms/version/LifeCycle-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/LifeCycle-2022-06-22">http://rs.tdwg.org/plic/terms/version/LifeCycle-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2719,6 +2837,10 @@ Life history of a living organism: The course of developmental changes in an org
 		<tr>
 			<td>Definition</td>
 			<td>Life history of a living organism: The course of developmental changes in an organism from fertilized zygote to maturity or stages through which an organism passes.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/LifeCycle</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2740,11 +2862,11 @@ Life history of a living organism: The course of developmental changes in an org
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/lifeCycleAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/lifeCycleAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/lifeCycleAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/lifeCycleAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2755,72 +2877,8 @@ Life history of a living organism: The course of developmental changes in an org
 			<td>lifeCycle element in structured format.</td>
 		</tr>
 		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="plic_lifeCycleUnstructured"></a>Term Name  plic:lifeCycleUnstructured</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/lifeCycleUnstructured">http://rs.tdwg.org/plic/terms/lifeCycleUnstructured</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/lifeCycleUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/lifeCycleUnstructured-2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Unstructured Life Cycle</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>lifeCycle element in text block format.</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="plic_lifeFormAtomized"></a>Term Name  plic:lifeFormAtomized</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/lifeFormAtomized">http://rs.tdwg.org/plic/terms/lifeFormAtomized</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/lifeFormAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/lifeFormAtomized-2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Atomized Life Form</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>lifeCycleForm element in structured format.</td>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/LifeCycle/LifeCycleAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2842,11 +2900,11 @@ Life history of a living organism: The course of developmental changes in an org
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/lifeFormUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/lifeFormUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/lifeFormUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/lifeFormUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2855,6 +2913,10 @@ Life history of a living organism: The course of developmental changes in an org
 		<tr>
 			<td>Definition</td>
 			<td>lifeCycleForm element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/LifeForm/LifeFormUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2879,11 +2941,11 @@ All data related to the generation of offspring<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Reproduction-2022-06-14">http://rs.tdwg.org/plic/terms/version/Reproduction-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Reproduction-2022-06-22">http://rs.tdwg.org/plic/terms/version/Reproduction-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2892,6 +2954,10 @@ All data related to the generation of offspring<table>
 		<tr>
 			<td>Definition</td>
 			<td>All data related to the production of offspring.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Reproduction</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2913,11 +2979,11 @@ All data related to the generation of offspring<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/reproductionAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/reproductionAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/reproductionAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/reproductionAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2926,6 +2992,10 @@ All data related to the generation of offspring<table>
 		<tr>
 			<td>Definition</td>
 			<td>Reproduction element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Reproduction/ReproductionAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2947,11 +3017,11 @@ All data related to the generation of offspring<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/reproductionUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/reproductionUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/reproductionUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/reproductionUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2960,6 +3030,10 @@ All data related to the generation of offspring<table>
 		<tr>
 			<td>Definition</td>
 			<td>Reproduction element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Reproduction/ReproductionUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2984,11 +3058,11 @@ Set of changes or events that recurrently take place at the same time of year an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/AnnualCycleAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/AnnualCycleAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/AnnualCycleAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/AnnualCycleAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2996,8 +3070,11 @@ Set of changes or events that recurrently take place at the same time of year an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>AnnualCycles element in structured format.
-</td>
+			<td>AnnualCycles element in structured format. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AnnualCycleAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3019,11 +3096,11 @@ Set of changes or events that recurrently take place at the same time of year an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/AnnualCycleUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/AnnualCycleUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/AnnualCycleUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/AnnualCycleUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3031,8 +3108,11 @@ Set of changes or events that recurrently take place at the same time of year an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>AnnualCyles element in text block format.
-</td>
+			<td>AnnualCyles element in text block format. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AnnualCycleUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3054,11 +3134,11 @@ Set of changes or events that recurrently take place at the same time of year an
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/AnnualCycles-2022-06-14">http://rs.tdwg.org/plic/terms/version/AnnualCycles-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/AnnualCycles-2022-06-22">http://rs.tdwg.org/plic/terms/version/AnnualCycles-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3070,8 +3150,11 @@ Set of changes or events that recurrently take place at the same time of year an
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>For example: reproduction, flowering, fruiting, emergence of insects, etc.
-</td>
+			<td>For example: reproduction, flowering, fruiting, emergence of insects, etc. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AnnualCycles</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3083,21 +3166,21 @@ Set of changes or events that recurrently take place at the same time of year an
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="plic_EndTimeInterval "></a>Term Name  plic:EndTimeInterval </th>
+			<th colspan="2"><a id="plic_EndTimeInterval"></a>Term Name  plic:EndTimeInterval</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/EndTimeInterval ">http://rs.tdwg.org/plic/terms/EndTimeInterval </a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/EndTimeInterval">http://rs.tdwg.org/plic/terms/EndTimeInterval</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/EndTimeInterval -2022-06-14">http://rs.tdwg.org/plic/terms/version/EndTimeInterval -2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/EndTimeInterval-2022-06-22">http://rs.tdwg.org/plic/terms/version/EndTimeInterval-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3105,13 +3188,15 @@ Set of changes or events that recurrently take place at the same time of year an
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The date-time or interval at which an event ends. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).
-
-A controlled vocabulary is recommended.</td>
+			<td>The date-time or interval at which an event ends. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).  A controlled vocabulary is recommended.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
 			<td>e.g. "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AnnualCycleAtomized/endTimeInterval</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3133,11 +3218,11 @@ A controlled vocabulary is recommended.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Event-2022-06-14">http://rs.tdwg.org/plic/terms/version/Event-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Event-2022-06-22">http://rs.tdwg.org/plic/terms/version/Event-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3145,9 +3230,11 @@ A controlled vocabulary is recommended.</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An action that occurs at some location during some time.
-
-A controlled vocabulary is recommended.</td>
+			<td>An action that occurs at some location during some time.  A controlled vocabulary is recommended.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AnnualCycleAtomized/Event</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3169,11 +3256,11 @@ A controlled vocabulary is recommended.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/StartTimeInterval-2022-06-14">http://rs.tdwg.org/plic/terms/version/StartTimeInterval-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/StartTimeInterval-2022-06-22">http://rs.tdwg.org/plic/terms/version/StartTimeInterval-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3181,13 +3268,19 @@ A controlled vocabulary is recommended.</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The date-time or interval at which an event starts. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).
-
-A controlled vocabulary is recommended.</td>
+			<td>The date-time or interval at which an event starts. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).   A controlled vocabulary is recommended.</td>
+		</tr>
+		<tr>
+			<td>Usage</td>
+			<td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </td>
 		</tr>
 		<tr>
 			<td>Notes</td>
 			<td>e.g. "1963-03-08T14:07-0600" is 8 Mar 1963 2:07pm in the time zone six hours earlier than UTC, "2009-02-20T08:40Z" is 20 Feb 2009 8:40am UTC, "1809-02-12" is 12 Feb 1809, "1906-06" is Jun 1906, "1971" is just that year, "2007-03-01T13:00:00Z/2008-05-11T15:30:00Z" is the interval between 1 Mar 2007 1pm UTC and 11 May 2008 3:30pm UTC, "2007-11-13/15" is the interval between 13 Nov 2007 and 15 Nov 2007.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AnnualCycleAtomized/startTimeInterval</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3212,11 +3305,11 @@ Information related to the food supply for the development and sustenance of the
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Feeding-2022-06-14">http://rs.tdwg.org/plic/terms/version/Feeding-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Feeding-2022-06-22">http://rs.tdwg.org/plic/terms/version/Feeding-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3225,6 +3318,10 @@ Information related to the food supply for the development and sustenance of the
 		<tr>
 			<td>Definition</td>
 			<td>Information related to the food supply for the development and sustenance of the individual and/or its offspring.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Feeding</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3236,21 +3333,21 @@ Information related to the food supply for the development and sustenance of the
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="plic_Strategy"></a>Term Name  plic:Strategy</th>
+			<th colspan="2"><a id="plic_TrophicStrategy"></a>Term Name  plic:TrophicStrategy</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/Strategy">http://rs.tdwg.org/plic/terms/Strategy</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/TrophicStrategy">http://rs.tdwg.org/plic/terms/TrophicStrategy</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Strategy-2022-06-14">http://rs.tdwg.org/plic/terms/version/Strategy-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/TrophicStrategy-2022-06-22">http://rs.tdwg.org/plic/terms/version/TrophicStrategy-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3258,10 +3355,11 @@ Information related to the food supply for the development and sustenance of the
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Tactic used to obtain energy or nutrients. A controlled vocabulary is 
-recommended. e.g. Chemosynthetic organisms,Photosynthetic 
-organisms,Parasites,Decomposers,Suspension feeders,Substrate feeders, 
-Grazers,Fluid-feeders,Predators...</td>
+			<td>Tactic used to obtain energy or nutrients. A controlled vocabulary is  recommended. e.g. Chemosynthetic organisms, Photosynthetic  organisms, Parasites, Decomposers, Suspension feeders, Substrate feeders,   Grazers, Fluid-feeders, Predators...</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Feeding/FeedingAtomized/Thropic/TrophicStrategy</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3273,21 +3371,21 @@ Grazers,Fluid-feeders,Predators...</td>
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="plic_StrategyRemarks"></a>Term Name  plic:StrategyRemarks</th>
+			<th colspan="2"><a id="plic_TrophicStrategyRemarks"></a>Term Name  plic:TrophicStrategyRemarks</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/StrategyRemarks">http://rs.tdwg.org/plic/terms/StrategyRemarks</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/TrophicStrategyRemarks">http://rs.tdwg.org/plic/terms/TrophicStrategyRemarks</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/StrategyRemarks-2022-06-14">http://rs.tdwg.org/plic/terms/version/StrategyRemarks-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/TrophicStrategyRemarks-2022-06-22">http://rs.tdwg.org/plic/terms/version/TrophicStrategyRemarks-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3298,8 +3396,50 @@ Grazers,Fluid-feeders,Predators...</td>
 			<td>Information notes about specific feeding strategies.</td>
 		</tr>
 		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Feeding/FeedingAtomized/Thropic/TrophicStrategyRemarks</td>
+		</tr>
+		<tr>
 			<td>Type</td>
 			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="plic_Type"></a>Term Name  plic:Type</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/Type">http://rs.tdwg.org/plic/terms/Type</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2022-06-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Type-2022-06-22">http://rs.tdwg.org/plic/terms/version/Type-2022-06-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Primary diet source. A controlled vocabulary is recommended.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesAtomized/UsedIn/DistributionScope/@Type</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -3317,11 +3457,11 @@ Grazers,Fluid-feeders,Predators...</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/feedingAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/feedingAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/feedingAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/feedingAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3330,6 +3470,10 @@ Grazers,Fluid-feeders,Predators...</td>
 		<tr>
 			<td>Definition</td>
 			<td>feeding elemento in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Feeding/FeedingAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3351,11 +3495,11 @@ Grazers,Fluid-feeders,Predators...</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/feedingUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/feedingUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/feedingUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/feedingUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3364,6 +3508,10 @@ Grazers,Fluid-feeders,Predators...</td>
 		<tr>
 			<td>Definition</td>
 			<td>feeding element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Feeding/FeedingUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3388,11 +3536,11 @@ The permanent spreading of individuals away from each other not including return
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Dispersal-2022-06-14">http://rs.tdwg.org/plic/terms/version/Dispersal-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Dispersal-2022-06-22">http://rs.tdwg.org/plic/terms/version/Dispersal-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3401,6 +3549,10 @@ The permanent spreading of individuals away from each other not including return
 		<tr>
 			<td>Definition</td>
 			<td>The permanent spreading of individuals away from each other not including return. Dispersal determines the range over which genetic mixing occurs, and thus, the degree of homogeneity and inbreeding in a population.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Dispersal</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3422,11 +3574,11 @@ The permanent spreading of individuals away from each other not including return
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DispersalUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/DispersalUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DispersalUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/DispersalUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3435,6 +3587,10 @@ The permanent spreading of individuals away from each other not including return
 		<tr>
 			<td>Definition</td>
 			<td>Dispersal element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Dispersal/DispersalUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3456,11 +3612,11 @@ The permanent spreading of individuals away from each other not including return
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Distance-2022-06-14">http://rs.tdwg.org/plic/terms/version/Distance-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Distance-2022-06-22">http://rs.tdwg.org/plic/terms/version/Distance-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3476,13 +3632,15 @@ The permanent spreading of individuals away from each other not including return
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>de tipo MeasurementOrFactClass
-</td>
+			<td>de tipo MeasurementOrFactClass </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Dispersal/DispersalAtomized/Distance</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
-</td>
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property </td>
 		</tr>
 	</tbody>
 </table>
@@ -3500,11 +3658,11 @@ The permanent spreading of individuals away from each other not including return
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Purpose-2022-06-14">http://rs.tdwg.org/plic/terms/version/Purpose-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Purpose-2022-06-22">http://rs.tdwg.org/plic/terms/version/Purpose-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3517,6 +3675,10 @@ The permanent spreading of individuals away from each other not including return
 		<tr>
 			<td>Examples</td>
 			<td>De tipo MeasurementOrFactClass</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/dataset/purpose</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3538,11 +3700,11 @@ The permanent spreading of individuals away from each other not including return
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/StructureDispersed-2022-06-14">http://rs.tdwg.org/plic/terms/version/StructureDispersed-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/StructureDispersed-2022-06-22">http://rs.tdwg.org/plic/terms/version/StructureDispersed-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3554,12 +3716,15 @@ The permanent spreading of individuals away from each other not including return
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Structured that is dispersed for a given biologial propuse, a controlled vocabulary is recommended.</td>
+			<td>Structured that is dispersed for a given biologial propose, a controlled vocabulary is recommended.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Dispersal/DispersalAtomized/StructureDispersed</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme
-</td>
+			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme </td>
 		</tr>
 	</tbody>
 </table>
@@ -3577,11 +3742,11 @@ The permanent spreading of individuals away from each other not including return
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Type-2022-06-14">http://rs.tdwg.org/plic/terms/version/Type-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Type-2022-06-22">http://rs.tdwg.org/plic/terms/version/Type-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3589,79 +3754,19 @@ The permanent spreading of individuals away from each other not including return
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Primary diet source. A controlled vocabulary is recommended.</td>
+			<td>VCR. Zoochory, Anemochory, Hydrochory, Barochory, Autochory.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Type of dispersal, a controlled vocabulary is recommended.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesAtomized/UsedIn/DistributionScope/@Type</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="plic_Type"></a>Term Name  plic:Type</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/Type">http://rs.tdwg.org/plic/terms/Type</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Type-2022-06-14">http://rs.tdwg.org/plic/terms/version/Type-2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Type</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>Primary diet source. A controlled vocabulary is recommended.</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="plic_Type"></a>Term Name  plic:Type</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/Type">http://rs.tdwg.org/plic/terms/Type</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Type-2022-06-14">http://rs.tdwg.org/plic/terms/version/Type-2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Type</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>Primary diet source. A controlled vocabulary is recommended.</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
+			<td>http://www.w3.org/2004/02/skos/core#ConceptScheme </td>
 		</tr>
 	</tbody>
 </table>
@@ -3682,11 +3787,11 @@ Responses, reactions or movements made by an organism in a particular situation<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Behavior-2022-06-14">http://rs.tdwg.org/plic/terms/version/Behavior-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Behavior-2022-06-22">http://rs.tdwg.org/plic/terms/version/Behavior-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3695,6 +3800,10 @@ Responses, reactions or movements made by an organism in a particular situation<
 		<tr>
 			<td>Definition</td>
 			<td>Responses, reactions or movements made by an organism in a particular situation.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Behavior</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3716,11 +3825,11 @@ Responses, reactions or movements made by an organism in a particular situation<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/behaviorAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/behaviorAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/behaviorAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/behaviorAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3728,9 +3837,11 @@ Responses, reactions or movements made by an organism in a particular situation<
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Responses, reactions or movements made by an organism in a particular situation.
-
-</td>
+			<td>Responses, reactions or movements made by an organism in a particular situation.  </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Behavior/BehaviorAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3752,11 +3863,11 @@ Responses, reactions or movements made by an organism in a particular situation<
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/behaviorUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/behaviorUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/behaviorUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/behaviorUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3764,9 +3875,11 @@ Responses, reactions or movements made by an organism in a particular situation<
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Responses, reactions or movements made by an organism in a particular situation.
-
-</td>
+			<td>Responses, reactions or movements made by an organism in a particular situation.  </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Behavior/BehaviorUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3781,40 +3894,6 @@ Responses, reactions or movements made by an organism in a particular situation<
 Mutual or reciprocal actions or influences. For example, predation, parasitism, mutualism, etc. Relations with products grown and stored by man (plagues) are also included.<table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="plic_InteractionSpeciesType"></a>Term Name  plic:InteractionSpeciesType</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/InteractionSpeciesType">http://rs.tdwg.org/plic/terms/InteractionSpeciesType</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/InteractionSpeciesType-2022-06-14">http://rs.tdwg.org/plic/terms/version/InteractionSpeciesType-2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Species Interaction Type</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>String with the type of interaction. Each element is seperated by comma and each list of elements by.</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="plic_Interactions"></a>Term Name  plic:Interactions</th>
 		</tr>
 	</thead>
@@ -3825,11 +3904,11 @@ Mutual or reciprocal actions or influences. For example, predation, parasitism, 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Interactions-2022-06-14">http://rs.tdwg.org/plic/terms/version/Interactions-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Interactions-2022-06-22">http://rs.tdwg.org/plic/terms/version/Interactions-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3842,6 +3921,10 @@ Mutual or reciprocal actions or influences. For example, predation, parasitism, 
 		<tr>
 			<td>Notes</td>
 			<td>For example, predation, parasitism, mutualism, etc.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Interactions</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3863,11 +3946,11 @@ Mutual or reciprocal actions or influences. For example, predation, parasitism, 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/SpeciesInteraction-2022-06-14">http://rs.tdwg.org/plic/terms/version/SpeciesInteraction-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/SpeciesInteraction-2022-06-22">http://rs.tdwg.org/plic/terms/version/SpeciesInteraction-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3878,8 +3961,50 @@ Mutual or reciprocal actions or influences. For example, predation, parasitism, 
 			<td>Information category concerning relations between resources (instances or records, such as Occurrences, Taxa, Locations, Events,...).</td>
 		</tr>
 		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Interactions/InteractionAtomized/SpeciesInteraction</td>
+		</tr>
+		<tr>
 			<td>Type</td>
 			<td>Class</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="plic_SpeciesInteractionType"></a>Term Name  plic:SpeciesInteractionType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/SpeciesInteractionType">http://rs.tdwg.org/plic/terms/SpeciesInteractionType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2022-06-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/SpeciesInteractionType-2022-06-22">http://rs.tdwg.org/plic/terms/version/SpeciesInteractionType-2022-06-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Species Interaction Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>String with the type of interaction. Each element is separated by comma and each list of elements by.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Interactions/InteractionAtomized/SpeciesInteractionType</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -3897,11 +4022,11 @@ Mutual or reciprocal actions or influences. For example, predation, parasitism, 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/interactionAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/interactionAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/interactionAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/interactionAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3910,6 +4035,10 @@ Mutual or reciprocal actions or influences. For example, predation, parasitism, 
 		<tr>
 			<td>Definition</td>
 			<td>interaction element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Interactions/InteractionAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3931,11 +4060,11 @@ Mutual or reciprocal actions or influences. For example, predation, parasitism, 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/interactionUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/interactionUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/interactionUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/interactionUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3944,6 +4073,10 @@ Mutual or reciprocal actions or influences. For example, predation, parasitism, 
 		<tr>
 			<td>Definition</td>
 			<td>interaction element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Interactions/InteractionUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -3968,11 +4101,11 @@ Information on the chemical structures and biological processes at the molecular
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/MolecularData-2022-06-14">http://rs.tdwg.org/plic/terms/version/MolecularData-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/MolecularData-2022-06-22">http://rs.tdwg.org/plic/terms/version/MolecularData-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3985,6 +4118,10 @@ Information on the chemical structures and biological processes at the molecular
 		<tr>
 			<td>Notes</td>
 			<td>Undeveloped. Placeholder for connecting with standards developed by specialists. For example, Standards for Data Exchange and Management from Scalalife (<a href="http://www.scalalife.eu/content/data">http://www.scalalife.eu/content/data</a>)</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/MolecularData</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4006,11 +4143,11 @@ Information on the chemical structures and biological processes at the molecular
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/MolecularDataAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/MolecularDataAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/MolecularDataAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/MolecularDataAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4019,6 +4156,10 @@ Information on the chemical structures and biological processes at the molecular
 		<tr>
 			<td>Definition</td>
 			<td>MolecularData element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/MolecularData/MolecularDataAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4040,11 +4181,11 @@ Information on the chemical structures and biological processes at the molecular
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/MolecularDataUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/MolecularDataUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/MolecularDataUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/MolecularDataUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4053,6 +4194,10 @@ Information on the chemical structures and biological processes at the molecular
 		<tr>
 			<td>Definition</td>
 			<td>MolecularData as a text block.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/MolecularData/MolecularDataUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4074,11 +4219,11 @@ Information on the chemical structures and biological processes at the molecular
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/RelatedTo-2022-06-14">http://rs.tdwg.org/plic/terms/version/RelatedTo-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/RelatedTo-2022-06-22">http://rs.tdwg.org/plic/terms/version/RelatedTo-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4087,6 +4232,10 @@ Information on the chemical structures and biological processes at the molecular
 		<tr>
 			<td>Definition</td>
 			<td>Specifies to which PlinianCore term the information contained under MolecularDataAtomized refers to. The controlled vocabulary is list of content-bearing PlinianCore elements.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Dispersal/DispersalAtomized/Distance/RelatedTo</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4111,11 +4260,11 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Causes-2022-06-14">http://rs.tdwg.org/plic/terms/version/Causes-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Causes-2022-06-22">http://rs.tdwg.org/plic/terms/version/Causes-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4124,6 +4273,10 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		<tr>
 			<td>Definition</td>
 			<td>Reasons for the species to move from one place to another in a specific lap.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Migratory/MigratoryAtomized/Causes</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4145,11 +4298,11 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Migratory-2022-06-14">http://rs.tdwg.org/plic/terms/version/Migratory-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Migratory-2022-06-22">http://rs.tdwg.org/plic/terms/version/Migratory-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4158,6 +4311,10 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		<tr>
 			<td>Definition</td>
 			<td>The regular, usually seasonal, movement of all or part of an animal population of and from a given area, which can occur in variable periods of time and even involve more than one generation.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Migratory</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4179,11 +4336,11 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/MigratoryAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/MigratoryAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/MigratoryAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/MigratoryAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4192,6 +4349,10 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		<tr>
 			<td>Definition</td>
 			<td>The regular, usually seasonal, movement of all or part of an animal population to and from a given area, which can occur in variable periods of time and even involve more than one generation broken down in specific elements. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Migratory/MigratoryAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4213,11 +4374,11 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Patterns-2022-06-14">http://rs.tdwg.org/plic/terms/version/Patterns-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Patterns-2022-06-22">http://rs.tdwg.org/plic/terms/version/Patterns-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4226,6 +4387,10 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		<tr>
 			<td>Definition</td>
 			<td>Displacement of the species in space.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Migratory/MigratoryAtomized/Patterns</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4247,11 +4412,11 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Routes-2022-06-14">http://rs.tdwg.org/plic/terms/version/Routes-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Routes-2022-06-22">http://rs.tdwg.org/plic/terms/version/Routes-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4260,6 +4425,10 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		<tr>
 			<td>Definition</td>
 			<td>Trajectory followed by the species.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Migratory/MigratoryAtomized/Routes</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4281,11 +4450,11 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Season-2022-06-14">http://rs.tdwg.org/plic/terms/version/Season-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Season-2022-06-22">http://rs.tdwg.org/plic/terms/version/Season-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4294,6 +4463,10 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		<tr>
 			<td>Definition</td>
 			<td>Time of year in which a species migrates.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Migratory/MigratoryAtomized/Season</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4315,11 +4488,11 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/migratoryUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/migratoryUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/migratoryUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/migratoryUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4328,6 +4501,10 @@ The regular, usually seasonal, movement of all or part of an animal population t
 		<tr>
 			<td>Definition</td>
 			<td>The regular, usually seasonal, movement of all or part of an animal population to and from a given area, which can occur in variable periods of time and even involve more than one generation as text block.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Migratory/MigratoryUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4352,11 +4529,11 @@ Ecological importance of the taxon<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/EcologicalSignificance-2022-06-14">http://rs.tdwg.org/plic/terms/version/EcologicalSignificance-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/EcologicalSignificance-2022-06-22">http://rs.tdwg.org/plic/terms/version/EcologicalSignificance-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4365,6 +4542,10 @@ Ecological importance of the taxon<table>
 		<tr>
 			<td>Definition</td>
 			<td>Ecological importance of the taxon. (Placeholder).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/EcologicalSignificance</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4386,11 +4567,11 @@ Ecological importance of the taxon<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ecologicalSignificanceAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/ecologicalSignificanceAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ecologicalSignificanceAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/ecologicalSignificanceAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4399,6 +4580,10 @@ Ecological importance of the taxon<table>
 		<tr>
 			<td>Definition</td>
 			<td>Ecological Significance element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/EcologicalSignificance/EcologicalSignificanceAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4420,11 +4605,11 @@ Ecological importance of the taxon<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ecologicalSignificanceUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/ecologicalSignificanceUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ecologicalSignificanceUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/ecologicalSignificanceUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4433,6 +4618,10 @@ Ecological importance of the taxon<table>
 		<tr>
 			<td>Definition</td>
 			<td>Ecological Significance element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/EcologicalSignificance/EcologicalSignificanceUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4460,11 +4649,11 @@ Set of environmental conditions within which it is believed that the species can
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/EnvironmentalEnvelope-2022-06-14">http://rs.tdwg.org/plic/terms/version/EnvironmentalEnvelope-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/EnvironmentalEnvelope-2022-06-22">http://rs.tdwg.org/plic/terms/version/EnvironmentalEnvelope-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4473,6 +4662,10 @@ Set of environmental conditions within which it is believed that the species can
 		<tr>
 			<td>Definition</td>
 			<td>Set of environmental conditions within which it is believed that the species can persist; that is, where its environmental requirements can be satisfied.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/EnvironmentalEnvelope</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4494,11 +4687,11 @@ Set of environmental conditions within which it is believed that the species can
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/environmentalEnvelopeAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/environmentalEnvelopeAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/environmentalEnvelopeAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/environmentalEnvelopeAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4507,6 +4700,10 @@ Set of environmental conditions within which it is believed that the species can
 		<tr>
 			<td>Definition</td>
 			<td>Environmental envelope of a species expressed as an enumeration of measures and parameters.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/EnvironmentalEnvelope/EnvironmentalEnvelopeAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4528,11 +4725,11 @@ Set of environmental conditions within which it is believed that the species can
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/environmentalEnvelopeUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/environmentalEnvelopeUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/environmentalEnvelopeUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/environmentalEnvelopeUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4540,7 +4737,11 @@ Set of environmental conditions within which it is believed that the species can
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>environmentalEnvelopeas a a text block.</td>
+			<td>environmentalEnvelope as a text block.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/EnvironmentalEnvelope/EnvironmentalEnvelopeUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4568,11 +4769,11 @@ Information about invasive exotic species that could threaten ecosystems, habita
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Invasiveness-2022-06-14">http://rs.tdwg.org/plic/terms/version/Invasiveness-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Invasiveness-2022-06-22">http://rs.tdwg.org/plic/terms/version/Invasiveness-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4581,6 +4782,10 @@ Information about invasive exotic species that could threaten ecosystems, habita
 		<tr>
 			<td>Definition</td>
 			<td>Information about invasive exotic species that could threaten to ecosystem, habitats and species.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4602,11 +4807,11 @@ Information about invasive exotic species that could threaten ecosystems, habita
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Route-2022-06-14">http://rs.tdwg.org/plic/terms/version/Route-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Route-2022-06-22">http://rs.tdwg.org/plic/terms/version/Route-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4615,6 +4820,10 @@ Information about invasive exotic species that could threaten ecosystems, habita
 		<tr>
 			<td>Definition</td>
 			<td>This is equivalent and probably replaceable by gisin:route.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/Route</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4636,11 +4845,11 @@ Information about invasive exotic species that could threaten ecosystems, habita
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/WhatImpact-2022-06-14">http://rs.tdwg.org/plic/terms/version/WhatImpact-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/WhatImpact-2022-06-22">http://rs.tdwg.org/plic/terms/version/WhatImpact-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4648,9 +4857,11 @@ Information about invasive exotic species that could threaten ecosystems, habita
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An indication of the actual impact as a free text string. e.g. destroys 
-riparian vegetation, destroys irrigation systems, displaces Arvicola 
-sapidus.</td>
+			<td>An indication of the actual impact as a free text string. e.g. destroys  riparian vegetation, destroys irrigation systems, displaces Arvicola  sapidus.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/WhatImpact</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4672,11 +4883,11 @@ sapidus.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/abundance-2022-06-14">http://rs.tdwg.org/plic/terms/version/abundance-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/abundance-2022-06-22">http://rs.tdwg.org/plic/terms/version/abundance-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4685,6 +4896,10 @@ sapidus.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Controlled vocabulary: Dominant, Common, Rare, Zero, Unknown, Monoculture.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/abundance</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4706,11 +4921,11 @@ sapidus.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/citation-2022-06-14">http://rs.tdwg.org/plic/terms/version/citation-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/citation-2022-06-22">http://rs.tdwg.org/plic/terms/version/citation-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4719,6 +4934,10 @@ sapidus.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Publication date of the current version.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/citation</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4740,11 +4959,11 @@ sapidus.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/countryCode-2022-06-14">http://rs.tdwg.org/plic/terms/version/countryCode-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/countryCode-2022-06-22">http://rs.tdwg.org/plic/terms/version/countryCode-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4755,40 +4974,8 @@ sapidus.</td>
 			<td>The standard code for the country in which the Location occurs. Recommended best practice is to use ISO 3166-1-alpha-2 country codes.</td>
 		</tr>
 		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="plic_county"></a>Term Name  plic:county</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/county">http://rs.tdwg.org/plic/terms/county</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/county-2022-06-14">http://rs.tdwg.org/plic/terms/version/county-2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>County</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The full, unabbreviated name of the next smaller administrative region 
-than stateProvince (county, shire, department, etc.) in which the 
-Location occurs.</td>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/countryCode</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4810,11 +4997,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/county-2022-06-14">http://rs.tdwg.org/plic/terms/version/county-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/county-2022-06-22">http://rs.tdwg.org/plic/terms/version/county-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4822,9 +5009,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full, unabbreviated name of the next smaller administrative region 
-than stateProvince (county, shire, department, etc.) in which the 
-Location occurs.</td>
+			<td>The full, unabbreviated name of the next smaller administrative region  than stateProvince (county, shire, department, etc.) in which the  Location occurs.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/county</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4846,11 +5035,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/distribution-2022-06-14">http://rs.tdwg.org/plic/terms/version/distribution-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/distribution-2022-06-22">http://rs.tdwg.org/plic/terms/version/distribution-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4859,6 +5048,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Controlled vocabulary: Widespread, Moderate, Localized, Unknown.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/dataset/distribution</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4880,11 +5073,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/endValidDate-2022-06-14">http://rs.tdwg.org/plic/terms/version/endValidDate-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/endValidDate-2022-06-22">http://rs.tdwg.org/plic/terms/version/endValidDate-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4897,6 +5090,10 @@ Location occurs.</td>
 		<tr>
 			<td>Notes</td>
 			<td>From GISIN: SpeciesStatus. <a href="http://www.gisin.org/cwis438/websites/GISINDirectory/Tech/ProtocolSpecification.php#4.4.1.1">http://www.gisin.org/cwis438/websites/GISINDirectory/Tech/ProtocolSpecification.php#4.4.1.1</a></td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/endValidDate</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4918,11 +5115,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/harmful-2022-06-14">http://rs.tdwg.org/plic/terms/version/harmful-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/harmful-2022-06-22">http://rs.tdwg.org/plic/terms/version/harmful-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4931,6 +5128,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Controlled vocabulary: Yes, No, Potentially, Unknown.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/harmful</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4952,11 +5153,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/impactMechanism-2022-06-14">http://rs.tdwg.org/plic/terms/version/impactMechanism-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/impactMechanism-2022-06-22">http://rs.tdwg.org/plic/terms/version/impactMechanism-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4965,6 +5166,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Mechanism of introduction or impact to a new location.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/impactMechanism</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -4986,11 +5191,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/impactTarget-2022-06-14">http://rs.tdwg.org/plic/terms/version/impactTarget-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/impactTarget-2022-06-22">http://rs.tdwg.org/plic/terms/version/impactTarget-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4999,6 +5204,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>This is equivalent and probably replaceable by gisin:impactTarget.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/impactTarget</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5020,11 +5229,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/invasivenessAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/invasivenessAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/invasivenessAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/invasivenessAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5033,6 +5242,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>invasiveness element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5054,11 +5267,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/invasivenessUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/invasivenessUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/invasivenessUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/invasivenessUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5067,6 +5280,48 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>invasiveness element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessUnstructured</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="plic_language"></a>Term Name  plic:language</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/language">http://rs.tdwg.org/plic/terms/language</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2022-06-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/language-2022-06-22">http://rs.tdwg.org/plic/terms/version/language-2022-06-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Language</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Language used to write the species information, use ISO 639-2 vocabulary..</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AncillaryData/language</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5088,11 +5343,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/localityName-2022-06-14">http://rs.tdwg.org/plic/terms/version/localityName-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/localityName-2022-06-22">http://rs.tdwg.org/plic/terms/version/localityName-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5101,6 +5356,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Protocol Specification on Locations.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/localityName</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5122,11 +5381,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/localityType-2022-06-14">http://rs.tdwg.org/plic/terms/version/localityType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/localityType-2022-06-22">http://rs.tdwg.org/plic/terms/version/localityType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5134,7 +5393,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Term borroewed from GISIN. An indication of the scope of the place referred under LocalityName. </td>
+			<td>Term borrowed from GISIN. An indication of the scope of the place referred under LocalityName. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/localityType</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5156,11 +5419,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/memo-2022-06-14">http://rs.tdwg.org/plic/terms/version/memo-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/memo-2022-06-22">http://rs.tdwg.org/plic/terms/version/memo-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5168,7 +5431,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>A GISIN term, part of its "SpeciesStaus" protocol , defined as  "An unsearchable field for providers to add anything else they think is important"</td>
+			<td>A GISIN term, part of its "SpeciesStatus" protocol , defined as  "An unsearchable field for providers to add anything else they think is important"</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/memo</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5190,11 +5457,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/modified-2022-06-14">http://rs.tdwg.org/plic/terms/version/modified-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/modified-2022-06-22">http://rs.tdwg.org/plic/terms/version/modified-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5210,7 +5477,7 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Equivalent XPath</td>
-			<td>/root/another/child</td>
+			<td>/AncillaryData/modified</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5232,11 +5499,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/origin-2022-06-14">http://rs.tdwg.org/plic/terms/version/origin-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/origin-2022-06-22">http://rs.tdwg.org/plic/terms/version/origin-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5245,6 +5512,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Controlled vocabulary: Indigenous, Exotic, Unknown.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/origin</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5266,11 +5537,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/persistence-2022-06-14">http://rs.tdwg.org/plic/terms/version/persistence-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/persistence-2022-06-22">http://rs.tdwg.org/plic/terms/version/persistence-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5279,6 +5550,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Controlled vocabulary: Persistent, Temporary, Transient, DiedOut, Unknown.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/persistence</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5300,11 +5575,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/presence-2022-06-14">http://rs.tdwg.org/plic/terms/version/presence-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/presence-2022-06-22">http://rs.tdwg.org/plic/terms/version/presence-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5313,6 +5588,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Controlled vocabulary: Absent, SometimesPresent, Present, Unknown, Reported.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/presence</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5334,11 +5613,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/publicationDate-2022-06-14">http://rs.tdwg.org/plic/terms/version/publicationDate-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/publicationDate-2022-06-22">http://rs.tdwg.org/plic/terms/version/publicationDate-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5351,6 +5630,10 @@ Location occurs.</td>
 		<tr>
 			<td>Notes</td>
 			<td>From GISIN: SpeciesStatus. <a href="http://www.gisin.org/cwis438/websites/GISINDirectory/Tech/ProtocolSpecification.php#4.4.1.1">http://www.gisin.org/cwis438/websites/GISINDirectory/Tech/ProtocolSpecification.php#4.4.1.1</a></td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/publicationDate</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5372,11 +5655,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/rateOfSpread-2022-06-14">http://rs.tdwg.org/plic/terms/version/rateOfSpread-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/rateOfSpread-2022-06-22">http://rs.tdwg.org/plic/terms/version/rateOfSpread-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5385,6 +5668,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Controlled vocabulary: Rapid, Moderate, Slow, Unknown.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/rateOfSpread</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5406,11 +5693,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/regulatoryListing-2022-06-14">http://rs.tdwg.org/plic/terms/version/regulatoryListing-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/regulatoryListing-2022-06-22">http://rs.tdwg.org/plic/terms/version/regulatoryListing-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5419,6 +5706,10 @@ Location occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Controlled vocabulary: Prohibited, Restricted, NotConsidered, Unknown.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/regulatoryListing</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5440,11 +5731,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/startValidDate-2022-06-14">http://rs.tdwg.org/plic/terms/version/startValidDate-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/startValidDate-2022-06-22">http://rs.tdwg.org/plic/terms/version/startValidDate-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5460,7 +5751,7 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Equivalent XPath</td>
-			<td>/root/other/a<br/>/root/other/b</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/startValidDate</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5482,11 +5773,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/stateProvince-2022-06-14">http://rs.tdwg.org/plic/terms/version/stateProvince-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/stateProvince-2022-06-22">http://rs.tdwg.org/plic/terms/version/stateProvince-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5494,45 +5785,11 @@ Location occurs.</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The name of the next smaller administrative region than country (state, 
-province, canton, department, region, etc.) in which the Location 
-occurs.</td>
+			<td>The name of the next smaller administrative region than country (state,  province, canton, department, region, etc.) in which the Location  occurs.</td>
 		</tr>
 		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="plic_stateProvince"></a>Term Name  plic:stateProvince</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/stateProvince">http://rs.tdwg.org/plic/terms/stateProvince</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/stateProvince-2022-06-14">http://rs.tdwg.org/plic/terms/version/stateProvince-2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>State Province</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The name of the next smaller administrative region than country (state, 
-province, canton, department, region, etc.) in which the Location 
-occurs.</td>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/stateProvince</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5554,11 +5811,11 @@ occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/trend-2022-06-14">http://rs.tdwg.org/plic/terms/version/trend-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/trend-2022-06-22">http://rs.tdwg.org/plic/terms/version/trend-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5567,6 +5824,10 @@ occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>Controlled vocabulary: Stable, Declining, Unknown, Expanding.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/trend</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5588,11 +5849,11 @@ occurs.</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/vector-2022-06-14">http://rs.tdwg.org/plic/terms/version/vector-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/vector-2022-06-22">http://rs.tdwg.org/plic/terms/version/vector-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5601,6 +5862,10 @@ occurs.</td>
 		<tr>
 			<td>Definition</td>
 			<td>By which means a species occupies a new territory. e.g. fishing boats; dirty boots, cars (Aedes albopictus).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/vector</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5625,11 +5890,11 @@ Habitat and Distribution of the species<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Distribution-2022-06-14">http://rs.tdwg.org/plic/terms/version/Distribution-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Distribution-2022-06-22">http://rs.tdwg.org/plic/terms/version/Distribution-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5637,9 +5902,11 @@ Habitat and Distribution of the species<table>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Species geographical distribution.
-
-</td>
+			<td>Species geographical distribution.  </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/dataset/distribution</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5661,11 +5928,11 @@ Habitat and Distribution of the species<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/DistributionAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/DistributionAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5674,6 +5941,10 @@ Habitat and Distribution of the species<table>
 		<tr>
 			<td>Definition</td>
 			<td>Distribution element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/DistributionAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5695,11 +5966,11 @@ Habitat and Distribution of the species<table>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionScope-2022-06-14">http://rs.tdwg.org/plic/terms/version/DistributionScope-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionScope-2022-06-22">http://rs.tdwg.org/plic/terms/version/DistributionScope-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5711,21 +5982,19 @@ Habitat and Distribution of the species<table>
 		</tr>
 		<tr>
 			<td>Usage</td>
-			<td>
-</td>
+			<td> </td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>A controlled vocabulary is recommended.
-e.g. Historical, Current, Restricted and Wide.
-</td>
+			<td>A controlled vocabulary is recommended. e.g. Historical, Current, Restricted and Wide. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesAtomized/UsedIn/DistributionScope</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/2000/01/rdf-schema#Class
-
-
-</td>
+			<td>http://www.w3.org/2000/01/rdf-schema#Class   </td>
 		</tr>
 	</tbody>
 </table>
@@ -5743,11 +6012,11 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionScopeType-2022-06-14">http://rs.tdwg.org/plic/terms/version/DistributionScopeType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionScopeType-2022-06-22">http://rs.tdwg.org/plic/terms/version/DistributionScopeType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5755,14 +6024,11 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Categorization of scope qualifying the distribution presented in time (e.g. "prior 1900", "current", "projected", "winter"), in space (e.g. "in the Canary Islands", "Boreal"), by biological activity (e.g., "foraging distribution", "reproductive area"), or any other criteria . A controled vocabulary is recommended. 
-</td>
+			<td>Categorization of scope qualifying the distribution presented in time (e.g. "prior 1900", "current", "projected", "winter"), in space (e.g. "in the Canary Islands", "Boreal"), by biological activity (e.g., "foraging distribution", "reproductive area"), or any other criteria . A controlled vocabulary is recommended.  </td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/2000/01/rdf-schema#Class
-
-</td>
+			<td>http://www.w3.org/2000/01/rdf-schema#Class  </td>
 		</tr>
 	</tbody>
 </table>
@@ -5780,11 +6046,11 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionType-2022-06-14">http://rs.tdwg.org/plic/terms/version/DistributionType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionType-2022-06-22">http://rs.tdwg.org/plic/terms/version/DistributionType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5792,14 +6058,11 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Information about the distribution of the species based on the studied specimens collection sites data.
-
-</td>
+			<td>Information about the distribution of the species based on the studied specimens collection sites data.  </td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/2000/01/rdf-schema#Class
-</td>
+			<td>http://www.w3.org/2000/01/rdf-schema#Class </td>
 		</tr>
 	</tbody>
 </table>
@@ -5817,11 +6080,11 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/DistributionUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DistributionUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/DistributionUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5830,6 +6093,10 @@ e.g. Historical, Current, Restricted and Wide.
 		<tr>
 			<td>Definition</td>
 			<td>Distribution element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/DistributionUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5851,11 +6118,11 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Endemic-2022-06-14">http://rs.tdwg.org/plic/terms/version/Endemic-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Endemic-2022-06-22">http://rs.tdwg.org/plic/terms/version/Endemic-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5864,6 +6131,10 @@ e.g. Historical, Current, Restricted and Wide.
 		<tr>
 			<td>Definition</td>
 			<td>Ecological importance of the taxon. (Placeholder).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution/Endemic</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5885,11 +6156,11 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/EndemicIn-2022-06-14">http://rs.tdwg.org/plic/terms/version/EndemicIn-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/EndemicIn-2022-06-22">http://rs.tdwg.org/plic/terms/version/EndemicIn-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5902,6 +6173,10 @@ e.g. Historical, Current, Restricted and Wide.
 		<tr>
 			<td>Notes</td>
 			<td>If not specified, the Earth as a whole is assumed as the geographical context. Examples:  Vicuña (Vicugna vicugna Molina, 1782) endemic to the Andean region **in South America**. Manzanilla Real (Artemisia granatensis Boiss.) endemic in the peaks of Sierra Nevada (**in Spain**).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution/Endemic/EndemicAtomized/EndemicIn</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5923,11 +6198,11 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/EndemicTo-2022-06-14">http://rs.tdwg.org/plic/terms/version/EndemicTo-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/EndemicTo-2022-06-22">http://rs.tdwg.org/plic/terms/version/EndemicTo-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5940,6 +6215,10 @@ e.g. Historical, Current, Restricted and Wide.
 		<tr>
 			<td>Notes</td>
 			<td>Examples: Giant panda (Ailuropoda melanoleuca (David, 1869) endemic to China. Quetzal Resplendent (Pharomachrus mocinno de la Llave, 1832) endemic to Mexico, Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica and Panama.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution/Endemic/EndemicAtomized/EndemicTo</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -5961,11 +6240,11 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/GeographicEntity-2022-06-14">http://rs.tdwg.org/plic/terms/version/GeographicEntity-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/GeographicEntity-2022-06-22">http://rs.tdwg.org/plic/terms/version/GeographicEntity-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -5977,13 +6256,15 @@ e.g. Historical, Current, Restricted and Wide.
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>A controlled vocabulary --as specified in the Catalogue element-- is recommended.
-e.g. Spain; Aguascalientas; Alabama; Ambon</td>
+			<td>A controlled vocabulary --as specified in the Catalogue element-- is recommended. e.g. Spain; Aguascalientas; Alabama; Ambon</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/DistributionAtomized/GeographicEntity</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
-</td>
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property </td>
 		</tr>
 	</tbody>
 </table>
@@ -6001,11 +6282,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/HabitatAndDistribution-2022-06-14">http://rs.tdwg.org/plic/terms/version/HabitatAndDistribution-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/HabitatAndDistribution-2022-06-22">http://rs.tdwg.org/plic/terms/version/HabitatAndDistribution-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6014,6 +6295,10 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		<tr>
 			<td>Definition</td>
 			<td>Distribution of the species.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6035,11 +6320,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Habitats-2022-06-14">http://rs.tdwg.org/plic/terms/version/Habitats-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Habitats-2022-06-22">http://rs.tdwg.org/plic/terms/version/Habitats-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6048,6 +6333,10 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		<tr>
 			<td>Definition</td>
 			<td>General description of the sites where the species is found (ecosystem, environment or microhabitat).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution/Habitats</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6069,11 +6358,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/country-2022-06-14">http://rs.tdwg.org/plic/terms/version/country-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/country-2022-06-22">http://rs.tdwg.org/plic/terms/version/country-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6081,19 +6370,57 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The name of the country or major administrative unit in which the Location occurs.
-</td>
+			<td>The name of the country or major administrative unit in which the Location occurs. </td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>It is recommended to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.
-</td>
+			<td>It is recommended to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/dataset/associatedParty/address/country</td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property  </td>
+		</tr>
+	</tbody>
+</table>
 
-</td>
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="plic_county"></a>Term Name  plic:county</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/county">http://rs.tdwg.org/plic/terms/county</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2022-06-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/county-2022-06-22">http://rs.tdwg.org/plic/terms/version/county-2022-06-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>County</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/county</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property  </td>
 		</tr>
 	</tbody>
 </table>
@@ -6111,11 +6438,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/endemicAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/endemicAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/endemicAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/endemicAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6124,6 +6451,10 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		<tr>
 			<td>Definition</td>
 			<td>List of areas structured and categorized by territories in which the endemic species appears (EndemicTo) in relation to a wider area (EndemicIn) given as geographical context.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution/Endemic/EndemicAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6145,11 +6476,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/endemicUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/endemicUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/endemicUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/endemicUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6158,6 +6489,10 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		<tr>
 			<td>Definition</td>
 			<td>Information on the endemicity of a species as a text block.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution/Endemic/EndemicUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6169,27 +6504,21 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="plic_geographicEntity
-"></a>Term Name  plic:geographicEntity
-</th>
+			<th colspan="2"><a id="plic_geographicEntity"></a>Term Name  plic:geographicEntity</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/geographicEntity
-">http://rs.tdwg.org/plic/terms/geographicEntity
-</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/geographicEntity">http://rs.tdwg.org/plic/terms/geographicEntity</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/geographicEntity
--2022-06-14">http://rs.tdwg.org/plic/terms/version/geographicEntity
--2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/geographicEntity-2022-06-22">http://rs.tdwg.org/plic/terms/version/geographicEntity-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6197,15 +6526,15 @@ e.g. Spain; Aguascalientas; Alabama; Ambon</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>
-Name of the geographic entity. A controlled vocabulary --as specified in the Catalogue element-- is recommended.
-</td>
+			<td> Name of the geographic entity. A controlled vocabulary --as specified in the Catalogue element-- is recommended. </td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>
-e.g. Spain; Aguascalientas; Alabama; Ambon
-</td>
+			<td> e.g. Spain; Aguascalientas; Alabama; Ambon </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/DistributionAtomized/GeographicEntity</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6227,11 +6556,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/habitatAndDistributionUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/habitatAndDistributionUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/habitatAndDistributionUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/habitatAndDistributionUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6240,6 +6569,10 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		<tr>
 			<td>Definition</td>
 			<td>habitatAndDistribution element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution/HabitatAndDistributionUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6261,11 +6594,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/habitatAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/habitatAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/habitatAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/habitatAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6274,6 +6607,10 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		<tr>
 			<td>Definition</td>
 			<td>habitatAndDistribution element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution/Habitats/HabitatAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6295,11 +6632,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/habitatUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/habitatUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/habitatUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/habitatUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6308,6 +6645,10 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		<tr>
 			<td>Definition</td>
 			<td>habitat element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/HabitatAndDistribution/Habitats/HabitatUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6329,11 +6670,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/locality-2022-06-14">http://rs.tdwg.org/plic/terms/version/locality-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/locality-2022-06-22">http://rs.tdwg.org/plic/terms/version/locality-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6341,14 +6682,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description.
-</td>
+			<td>The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description. </td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
-
-</td>
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property  </td>
 		</tr>
 	</tbody>
 </table>
@@ -6366,11 +6704,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/municipality-2022-06-14">http://rs.tdwg.org/plic/terms/version/municipality-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/municipality-2022-06-22">http://rs.tdwg.org/plic/terms/version/municipality-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6378,14 +6716,49 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the Location occurs. Do not use this term for a nearby named place that does not contain the actual location.
-</td>
+			<td>The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the Location occurs. Do not use this term for a nearby named place that does not contain the actual location. </td>
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property  </td>
+		</tr>
+	</tbody>
+</table>
 
-</td>
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="plic_stateProvince"></a>Term Name  plic:stateProvince</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/stateProvince">http://rs.tdwg.org/plic/terms/stateProvince</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2022-06-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/stateProvince-2022-06-22">http://rs.tdwg.org/plic/terms/version/stateProvince-2022-06-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>State Province </td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/Invasiveness/InvasivenessAtomized/stateProvince</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property  </td>
 		</tr>
 	</tbody>
 </table>
@@ -6403,11 +6776,11 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/temporalCoverage-2022-06-14">http://rs.tdwg.org/plic/terms/version/temporalCoverage-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/temporalCoverage-2022-06-22">http://rs.tdwg.org/plic/terms/version/temporalCoverage-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6416,6 +6789,10 @@ e.g. Spain; Aguascalientas; Alabama; Ambon
 		<tr>
 			<td>Definition</td>
 			<td>This field specifies temporal coverage of the distribution, and allows coverages to be a single point in time, multiple points in time, or a range of dates.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesAtomized/UsedIn/temporalCoverage</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6440,11 +6817,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/AbundanceData-2022-06-14">http://rs.tdwg.org/plic/terms/version/AbundanceData-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/AbundanceData-2022-06-22">http://rs.tdwg.org/plic/terms/version/AbundanceData-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6455,38 +6832,8 @@ Information concerning the demographic aspects of the species: Territory, Popula
 			<td>The relative representation of a species population in relation to other species or multiple species in a particular territory.</td>
 		</tr>
 		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="plic_AppliesTo"></a>Term Name  plic:AppliesTo</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/AppliesTo">http://rs.tdwg.org/plic/terms/AppliesTo</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2022-06-14</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/AppliesTo-2022-06-14">http://rs.tdwg.org/plic/terms/version/AppliesTo-2022-06-14</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Applies to</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>Location where the status is used.</td>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/AbundanceData</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6508,11 +6855,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/AppliesTo-2022-06-14">http://rs.tdwg.org/plic/terms/version/AppliesTo-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/AppliesTo-2022-06-22">http://rs.tdwg.org/plic/terms/version/AppliesTo-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6521,6 +6868,48 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Location where the status is used.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation/LegislationAtomized/AppliesTo</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="plic_AppliesTo"></a>Term Name  plic:AppliesTo</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/AppliesTo">http://rs.tdwg.org/plic/terms/AppliesTo</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2022-06-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/AppliesTo-2022-06-22">http://rs.tdwg.org/plic/terms/version/AppliesTo-2022-06-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Applies to</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Location where the status is used.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation/LegislationAtomized/AppliesTo</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6542,11 +6931,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/AreaOfOccupancy-2022-06-14">http://rs.tdwg.org/plic/terms/version/AreaOfOccupancy-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/AreaOfOccupancy-2022-06-22">http://rs.tdwg.org/plic/terms/version/AreaOfOccupancy-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6555,6 +6944,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Area within its 'extent of occurrence' (see EOO) which is occupied by a taxon, excluding cases of vagrancy. The measure reflects the fact that a taxon will not usually occur throughout the area of its extent of occurrence, which may contain unsuitable or unoccupied habitats.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Territory/TerritoryAtomized/AreaOfOccupancy</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6576,11 +6969,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Authority-2022-06-14">http://rs.tdwg.org/plic/terms/version/Authority-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Authority-2022-06-22">http://rs.tdwg.org/plic/terms/version/Authority-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6589,6 +6982,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Organism or institution that assess the status.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/ThreatStatus/ThreatStatusAtomized/Authority</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6610,11 +7007,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/AverageDensity-2022-06-14">http://rs.tdwg.org/plic/terms/version/AverageDensity-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/AverageDensity-2022-06-22">http://rs.tdwg.org/plic/terms/version/AverageDensity-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6623,6 +7020,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Average of the densities obtained for a population.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/AverageDensity</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6644,11 +7045,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/BirthRate-2022-06-14">http://rs.tdwg.org/plic/terms/version/BirthRate-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/BirthRate-2022-06-22">http://rs.tdwg.org/plic/terms/version/BirthRate-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6657,6 +7058,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Ratio of births to the total number of individuals in a population in a time period.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/BirthRate</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6678,11 +7083,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/CarryingCapacity-2022-06-14">http://rs.tdwg.org/plic/terms/version/CarryingCapacity-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/CarryingCapacity-2022-06-22">http://rs.tdwg.org/plic/terms/version/CarryingCapacity-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6691,6 +7096,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Maximum population density possible as limited by the resources available for the population in the absence of predators and parasites.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/CarryingCapacity</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6712,11 +7121,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DensityData-2022-06-14">http://rs.tdwg.org/plic/terms/version/DensityData-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DensityData-2022-06-22">http://rs.tdwg.org/plic/terms/version/DensityData-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6725,6 +7134,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Population size in relation to a defined space unit.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/DensityData</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6746,11 +7159,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DescriptionLifeStages-2022-06-14">http://rs.tdwg.org/plic/terms/version/DescriptionLifeStages-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DescriptionLifeStages-2022-06-22">http://rs.tdwg.org/plic/terms/version/DescriptionLifeStages-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6759,6 +7172,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Sex/age categories or life stages of a species; can be size in the case of plants.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/DescriptionLifeStages</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6780,11 +7197,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DirectThreatAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/DirectThreatAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DirectThreatAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/DirectThreatAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6792,8 +7209,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>directThreats element in structured format.
-</td>
+			<td>directThreats element in structured format. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/DirectThreats/DirectThreatAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6815,11 +7235,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DirectThreats-2022-06-14">http://rs.tdwg.org/plic/terms/version/DirectThreats-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DirectThreats-2022-06-22">http://rs.tdwg.org/plic/terms/version/DirectThreats-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6832,6 +7252,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Notes</td>
 			<td>Examples: unsustainable fishing or logging. Threats can be past (historical), ongoing, and/or likely to occur in the future.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/DirectThreats</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6853,11 +7277,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/DispersalAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/DispersalAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/DispersalAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/DispersalAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6866,6 +7290,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Dispersal element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/NaturalHistory/Dispersal/DispersalAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6887,11 +7315,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Emigration-2022-06-14">http://rs.tdwg.org/plic/terms/version/Emigration-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Emigration-2022-06-22">http://rs.tdwg.org/plic/terms/version/Emigration-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6900,6 +7328,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Information on  individuals leaving a population.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/Emigration</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6921,11 +7353,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ExtentOfOccurrence-2022-06-14">http://rs.tdwg.org/plic/terms/version/ExtentOfOccurrence-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ExtentOfOccurrence-2022-06-22">http://rs.tdwg.org/plic/terms/version/ExtentOfOccurrence-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6934,6 +7366,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Area contained within the shortest continuous imaginary boundary which can be drawn to encompass all the known, inferred or projected sites of present occurrence of a taxon, excluding cases of vagrancy.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Territory/TerritoryAtomized/ExtentOfOccurrence</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6955,11 +7391,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Fecundity-2022-06-14">http://rs.tdwg.org/plic/terms/version/Fecundity-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Fecundity-2022-06-22">http://rs.tdwg.org/plic/terms/version/Fecundity-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -6968,6 +7404,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>In the context of a population, is the combined maximum potential of its individuals to produce offspring.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/Fecundity</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -6989,11 +7429,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Immigration-2022-06-14">http://rs.tdwg.org/plic/terms/version/Immigration-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Immigration-2022-06-22">http://rs.tdwg.org/plic/terms/version/Immigration-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7002,6 +7442,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Information on individuals entering a population.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/Immigration</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7023,11 +7467,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Legislation-2022-06-14">http://rs.tdwg.org/plic/terms/version/Legislation-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Legislation-2022-06-22">http://rs.tdwg.org/plic/terms/version/Legislation-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7036,6 +7480,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>A national proposed law or group of laws. A regional proposed law or group of laws.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7057,11 +7505,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/LegislationName-2022-06-14">http://rs.tdwg.org/plic/terms/version/LegislationName-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/LegislationName-2022-06-22">http://rs.tdwg.org/plic/terms/version/LegislationName-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7070,6 +7518,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Word or phrase to designate the law or group of laws.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation/LegislationAtomized/LegislationName</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7091,11 +7543,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/LegislationRead-2022-06-14">http://rs.tdwg.org/plic/terms/version/LegislationRead-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/LegislationRead-2022-06-22">http://rs.tdwg.org/plic/terms/version/LegislationRead-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7104,6 +7556,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>The oficial document in which the user can read the legislation.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation/LegislationAtomized/LegislationRead</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7125,11 +7581,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/LegislationType-2022-06-14">http://rs.tdwg.org/plic/terms/version/LegislationType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/LegislationType-2022-06-22">http://rs.tdwg.org/plic/terms/version/LegislationType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7159,11 +7615,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/MortalityRate-2022-06-14">http://rs.tdwg.org/plic/terms/version/MortalityRate-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/MortalityRate-2022-06-22">http://rs.tdwg.org/plic/terms/version/MortalityRate-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7172,6 +7628,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Probability of dying; the ratio between the number of deaths in a given time interval to the number of subjects alive at the start of this interval.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/MortalityRate</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7193,11 +7653,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Norm-2022-06-14">http://rs.tdwg.org/plic/terms/version/Norm-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Norm-2022-06-22">http://rs.tdwg.org/plic/terms/version/Norm-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7206,6 +7666,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Norms are general legal principles that are widely accepted. This acceptance is evidenced in a number of ways, such as international agreements, national legislation, domestic and international judicial decisions, and scholarly writings.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation/LegislationAtomized/Norm</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7227,11 +7691,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/NumberIndividualsPerObservation-2022-06-14">http://rs.tdwg.org/plic/terms/version/NumberIndividualsPerObservation-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/NumberIndividualsPerObservation-2022-06-22">http://rs.tdwg.org/plic/terms/version/NumberIndividualsPerObservation-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7240,6 +7704,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Mean number of individuals per observation event or unit.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/NumberIndividualsPerObservation</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7261,11 +7729,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/PatternDistribution-2022-06-14">http://rs.tdwg.org/plic/terms/version/PatternDistribution-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/PatternDistribution-2022-06-22">http://rs.tdwg.org/plic/terms/version/PatternDistribution-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7274,6 +7742,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>The spatial arrangement of the individuals of a population in the territory it occupies.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/PatternDistribution</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7295,11 +7767,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/PopulationBiology-2022-06-14">http://rs.tdwg.org/plic/terms/version/PopulationBiology-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/PopulationBiology-2022-06-22">http://rs.tdwg.org/plic/terms/version/PopulationBiology-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7308,6 +7780,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Description of the variations in time and space, as well as in the size and density of populations, and the factors that cause such variations.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7329,11 +7805,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/PopulationBiologyAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/PopulationBiologyAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/PopulationBiologyAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/PopulationBiologyAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7342,6 +7818,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Population biology data in structured form.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7363,11 +7843,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/PopulationGrowthRate-2022-06-14">http://rs.tdwg.org/plic/terms/version/PopulationGrowthRate-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/PopulationGrowthRate-2022-06-22">http://rs.tdwg.org/plic/terms/version/PopulationGrowthRate-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7376,6 +7856,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Growth rate of a population in a given time period, based on births, deaths, emigration and immigration.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/PopulationGrowthRate</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7397,11 +7881,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/PopulationTrend-2022-06-14">http://rs.tdwg.org/plic/terms/version/PopulationTrend-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/PopulationTrend-2022-06-22">http://rs.tdwg.org/plic/terms/version/PopulationTrend-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7410,6 +7894,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Changes of a population over time and can include changes in  distribution, biogeography (e.g., size of population), life-history (e.g., birth and death rates), etc.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/PopulationTrend</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7431,11 +7919,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ProportionIndividualsPerStageLife-2022-06-14">http://rs.tdwg.org/plic/terms/version/ProportionIndividualsPerStageLife-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ProportionIndividualsPerStageLife-2022-06-22">http://rs.tdwg.org/plic/terms/version/ProportionIndividualsPerStageLife-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7444,6 +7932,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Percentage of individuals that belong to each life stage in a population.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/ProportionIndividualsPerStageLife</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7465,11 +7957,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ProtectionLegalStatus-2022-06-14">http://rs.tdwg.org/plic/terms/version/ProtectionLegalStatus-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ProtectionLegalStatus-2022-06-22">http://rs.tdwg.org/plic/terms/version/ProtectionLegalStatus-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7478,6 +7970,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Description of the legal status.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation/LegislationAtomized/ProtectionLegalStatus</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7499,11 +7995,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Recruitment-2022-06-14">http://rs.tdwg.org/plic/terms/version/Recruitment-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Recruitment-2022-06-22">http://rs.tdwg.org/plic/terms/version/Recruitment-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7512,6 +8008,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Information on the process by which young individuals (e.g., seedlings, larvae, propagules) become part of the adult population. It can be rate, scale, a description, etc.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/Recruitment</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7533,11 +8033,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/SexRatio-2022-06-14">http://rs.tdwg.org/plic/terms/version/SexRatio-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/SexRatio-2022-06-22">http://rs.tdwg.org/plic/terms/version/SexRatio-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7546,6 +8046,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Relative number of males to females in a population.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/SexRatio</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7567,11 +8071,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Size-2022-06-14">http://rs.tdwg.org/plic/terms/version/Size-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Size-2022-06-22">http://rs.tdwg.org/plic/terms/version/Size-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7580,6 +8084,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Number of individual organisms in a population.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyAtomized/Size</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7601,11 +8109,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Status-2022-06-14">http://rs.tdwg.org/plic/terms/version/Status-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Status-2022-06-22">http://rs.tdwg.org/plic/terms/version/Status-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7614,6 +8122,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Whether a piece of legislation is in force, or superseded, etc.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation/LegislationAtomized/Status</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7635,11 +8147,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ThreatCategory-2022-06-14">http://rs.tdwg.org/plic/terms/version/ThreatCategory-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ThreatCategory-2022-06-22">http://rs.tdwg.org/plic/terms/version/ThreatCategory-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7648,6 +8160,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Description of the conservation status.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/ThreatStatus/ThreatStatusAtomized/ThreatCategory</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7669,11 +8185,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ThreatStatus-2022-06-14">http://rs.tdwg.org/plic/terms/version/ThreatStatus-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ThreatStatus-2022-06-22">http://rs.tdwg.org/plic/terms/version/ThreatStatus-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7684,8 +8200,50 @@ Information concerning the demographic aspects of the species: Territory, Popula
 			<td>Information about the conservation status of the taxon.</td>
 		</tr>
 		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/ThreatStatus</td>
+		</tr>
+		<tr>
 			<td>Type</td>
 			<td>Class</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="plic_Type"></a>Term Name  plic:Type</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/Type">http://rs.tdwg.org/plic/terms/Type</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2022-06-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Type-2022-06-22">http://rs.tdwg.org/plic/terms/version/Type-2022-06-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Category of the piece of legislation.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/CommonNames/CommonNamesAtomized/UsedIn/DistributionScope/@Type</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -7703,11 +8261,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/demographyAndThreat-2022-06-14">http://rs.tdwg.org/plic/terms/version/demographyAndThreat-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/demographyAndThreat-2022-06-22">http://rs.tdwg.org/plic/terms/version/demographyAndThreat-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7716,6 +8274,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Information concerning the demographic aspects of the species, as well as the conservation status.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7737,11 +8299,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/demographyAndThreatUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/demographyAndThreatUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/demographyAndThreatUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/demographyAndThreatUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7749,8 +8311,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>demographyAndThreat element in unstructured format.
-</td>
+			<td>demographyAndThreat element in unstructured format. </td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/DemographyAndThreatUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7772,11 +8337,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/directThreatUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/directThreatUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/directThreatUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/directThreatUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7785,6 +8350,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>directThreats element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/DirectThreats/DirectThreatUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7806,11 +8375,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/legislationAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/legislationAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/legislationAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/legislationAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7819,6 +8388,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>legislation element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation/LegislationAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7840,11 +8413,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/legislationUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/legislationUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/legislationUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/legislationUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7853,6 +8426,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>legislation element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Legislation/LegislationUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7874,11 +8451,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/populationBiologyUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/populationBiologyUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/populationBiologyUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/populationBiologyUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7887,6 +8464,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Population biology data as a text block.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/PopulationBiology/PopulationBiologyUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7908,11 +8489,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/territory-2022-06-14">http://rs.tdwg.org/plic/terms/version/territory-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/territory-2022-06-22">http://rs.tdwg.org/plic/terms/version/territory-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7921,6 +8502,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Information, mostly associated to vertebrates, referring to the territorial extension of the individual or group in terms of its activities (feeding, mating, etc.).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Territory</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7942,11 +8527,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/territoryAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/territoryAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/territoryAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/territoryAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7955,6 +8540,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Territory element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Territory/TerritoryAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -7976,11 +8565,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/territoryUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/territoryUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/territoryUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/territoryUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -7989,6 +8578,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Information associated mostly to vertebrates, referring to the territorial extension of the individual or group in terms of its activities (feeding, mating, etc.). As a text block.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/Territory/TerritoryUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8010,11 +8603,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/threatStatusAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/threatStatusAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/threatStatusAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/threatStatusAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8023,6 +8616,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>ThreatStatus element in structured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/ThreatStatus/ThreatStatusAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8044,11 +8641,11 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/threatStatusUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/threatStatusUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/threatStatusUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/threatStatusUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8057,6 +8654,10 @@ Information concerning the demographic aspects of the species: Territory, Popula
 		<tr>
 			<td>Definition</td>
 			<td>Information about the status of the taxon.As a text block.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/DemographyAndThreat/ThreatStatus/ThreatStatusUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8081,11 +8682,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Actions-2022-06-14">http://rs.tdwg.org/plic/terms/version/Actions-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Actions-2022-06-22">http://rs.tdwg.org/plic/terms/version/Actions-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8094,6 +8695,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Individual tasks in which a management project can be atomized. Each action must be separated by ;</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/ManagementAndConservation/ManagementAndConservationAtomized/Actions</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8115,11 +8720,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ActionsType-2022-06-14">http://rs.tdwg.org/plic/terms/version/ActionsType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ActionsType-2022-06-22">http://rs.tdwg.org/plic/terms/version/ActionsType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8149,11 +8754,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Conservation-ExplotationData-2022-06-14">http://rs.tdwg.org/plic/terms/version/Conservation-ExplotationData-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Conservation-ExplotationData-2022-06-22">http://rs.tdwg.org/plic/terms/version/Conservation-ExplotationData-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8162,6 +8767,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Acc. TDWG Economic Botany. Frequency record of plants, details of regeneration, sustainability or over-exploitation and any locally imposed bans on felling or harvesting.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/Conservation-ExplotationData</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8183,11 +8792,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Economics-2022-06-14">http://rs.tdwg.org/plic/terms/version/Economics-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Economics-2022-06-22">http://rs.tdwg.org/plic/terms/version/Economics-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8196,6 +8805,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Acc. TDWG Economic Botany. Real or potential existence of trade in live plants, plant parts or derivatives and, if so, the trade scale.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/Economics</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8217,11 +8830,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/HumanAndEnvironmentalrelevance-2022-06-14">http://rs.tdwg.org/plic/terms/version/HumanAndEnvironmentalrelevance-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/HumanAndEnvironmentalrelevance-2022-06-22">http://rs.tdwg.org/plic/terms/version/HumanAndEnvironmentalrelevance-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8230,6 +8843,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Impact or value an species has either on the environment or on humans, and that justify management measures.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/ManagementAndConservation/ManagementAndConservationAtomized/HumanAndEnvironmentalRelevance</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8251,11 +8868,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementAndConservation-2022-06-14">http://rs.tdwg.org/plic/terms/version/ManagementAndConservation-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementAndConservation-2022-06-22">http://rs.tdwg.org/plic/terms/version/ManagementAndConservation-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8264,6 +8881,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Management: actions directed at conserving or restoring species / Conservation: interventions undertaken designed to preserve species.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/ManagementAndConservation</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8285,11 +8906,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementAndConservationAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/ManagementAndConservationAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementAndConservationAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/ManagementAndConservationAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8298,6 +8919,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Management: actions directed at conserving or restoring species / Conservation: interventions undertaken designed to preserve species in an structured manner.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/ManagementAndConservation/ManagementAndConservationAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8319,11 +8944,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementAndConservationType-2022-06-14">http://rs.tdwg.org/plic/terms/version/ManagementAndConservationType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementAndConservationType-2022-06-22">http://rs.tdwg.org/plic/terms/version/ManagementAndConservationType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8353,11 +8978,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementAndConservationUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/ManagementAndConservationUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementAndConservationUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/ManagementAndConservationUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8366,6 +8991,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Management: actions directed at conserving or restoring species / Conservation: interventions undertaken designed to preserve species as a text block.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/ManagementAndConservation/ManagementAndConservationUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8387,11 +9016,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementPlan-2022-06-14">http://rs.tdwg.org/plic/terms/version/ManagementPlan-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ManagementPlan-2022-06-22">http://rs.tdwg.org/plic/terms/version/ManagementPlan-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8400,6 +9029,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>plan guiding the overall management project.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/ManagementAndConservation/ManagementAndConservationAtomized/ManagementPlan</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8421,11 +9054,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/MeansOfApplication-Administration-2022-06-14">http://rs.tdwg.org/plic/terms/version/MeansOfApplication-Administration-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/MeansOfApplication-Administration-2022-06-22">http://rs.tdwg.org/plic/terms/version/MeansOfApplication-Administration-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8434,6 +9067,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Acc. TDWG Economic Botany. This is specific relevant for medicines, poisons .</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/MeansOfApplication-Administration</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8445,29 +9082,33 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="plic_Objetives"></a>Term Name  plic:Objetives</th>
+			<th colspan="2"><a id="plic_Objectives"></a>Term Name  plic:Objectives</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/Objetives">http://rs.tdwg.org/plic/terms/Objetives</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/Objectives">http://rs.tdwg.org/plic/terms/Objectives</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Objetives-2022-06-14">http://rs.tdwg.org/plic/terms/version/Objetives-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Objectives-2022-06-22">http://rs.tdwg.org/plic/terms/version/Objectives-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Objetives</td>
+			<td>Objectives</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
 			<td>Specific purposes of the management actions. Each objective must be separated by ;</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/ManagementAndConservation/ManagementAndConservationAtomized/Objectives</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8489,11 +9130,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Organisms-2022-06-14">http://rs.tdwg.org/plic/terms/version/Organisms-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Organisms-2022-06-22">http://rs.tdwg.org/plic/terms/version/Organisms-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8502,6 +9143,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Acc. TDWG Economic Botany. Organisms which use the plant/plant parts.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/Organisms</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8523,11 +9168,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/PartUsed-2022-06-14">http://rs.tdwg.org/plic/terms/version/PartUsed-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/PartUsed-2022-06-22">http://rs.tdwg.org/plic/terms/version/PartUsed-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8536,6 +9181,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Acc. TDWG Economic Botany. Which plant parts are used, or have any negative values.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/PartUsed</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8557,11 +9206,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Potential-2022-06-14">http://rs.tdwg.org/plic/terms/version/Potential-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Potential-2022-06-22">http://rs.tdwg.org/plic/terms/version/Potential-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8569,7 +9218,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Acc. TDWG Economic Botany. Potential increase in the use, cultivation or production or possibility of introduction in other areas or social groups.</td>
+			<td>Acc. TDWG Economic Botany. Could the use, cultivation, manufacture of products etc. be increased and /or introduced to other areas or social groups?</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/Potential</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8591,11 +9244,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/ProductionDetails-2022-06-14">http://rs.tdwg.org/plic/terms/version/ProductionDetails-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/ProductionDetails-2022-06-22">http://rs.tdwg.org/plic/terms/version/ProductionDetails-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8604,6 +9257,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Definition:        Acc. TDWG Economic Botany. (where relevant). Give details of protection, cultivation, harvesting, yields, processing and storage methods used and take note of special tools, timing etc.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/ProductionDetails</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8625,11 +9282,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Properties-2022-06-14">http://rs.tdwg.org/plic/terms/version/Properties-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Properties-2022-06-22">http://rs.tdwg.org/plic/terms/version/Properties-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8638,6 +9295,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Acc. TDWG Economic Botany. Details of properties which influence its value for a specified purpose.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/Properties</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8659,11 +9320,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/RatingPopularity-2022-06-14">http://rs.tdwg.org/plic/terms/version/RatingPopularity-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/RatingPopularity-2022-06-22">http://rs.tdwg.org/plic/terms/version/RatingPopularity-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8672,6 +9333,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Acc. TDWG Economic Botany. Assessment of the plant for its use and possible preference to other species, pointing out, in this case, which species are they.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/RatingPopularity</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8693,11 +9358,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/SeasonOfAvailability-Use-2022-06-14">http://rs.tdwg.org/plic/terms/version/SeasonOfAvailability-Use-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/SeasonOfAvailability-Use-2022-06-22">http://rs.tdwg.org/plic/terms/version/SeasonOfAvailability-Use-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8706,6 +9371,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Acc. TDWG Economic Botany. The season in which the plant is available/is used and, if relevant, the time of day.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/SeasonOfAvailability-Use</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8727,11 +9396,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/SourceOfInformation-2022-06-14">http://rs.tdwg.org/plic/terms/version/SourceOfInformation-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/SourceOfInformation-2022-06-22">http://rs.tdwg.org/plic/terms/version/SourceOfInformation-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8740,6 +9409,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Where does the observation come from? Reference citations should be given. Where appropriate, voucher specimen details should be provided (collector, number, date, herbarium) as well as details of the recorded informant (name, gender, approximate age, occupation, ethnic identity, locality and spoken language).</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/SourceOfInformation</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8761,11 +9434,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Use-Value-2022-06-14">http://rs.tdwg.org/plic/terms/version/Use-Value-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Use-Value-2022-06-22">http://rs.tdwg.org/plic/terms/version/Use-Value-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8774,6 +9447,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>What is the plant used for, or what negative values does it have.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/Use-Value</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8795,11 +9472,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/UseNotes-2022-06-14">http://rs.tdwg.org/plic/terms/version/UseNotes-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/UseNotes-2022-06-22">http://rs.tdwg.org/plic/terms/version/UseNotes-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8808,6 +9485,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Notes about how species are utilized by people.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/UseNotes</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8819,25 +9500,25 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="plic_UseTypeAtomized"></a>Term Name  plic:UseTypeAtomized</th>
+			<th colspan="2"><a id="plic_UseType"></a>Term Name  plic:UseType</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/UseTypeAtomized">http://rs.tdwg.org/plic/terms/UseTypeAtomized</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/UseType">http://rs.tdwg.org/plic/terms/UseType</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/UseTypeAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/UseTypeAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/UseType-2022-06-22">http://rs.tdwg.org/plic/terms/version/UseType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Use Type Atomized</td>
+			<td>Use Type</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -8863,11 +9544,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Users-2022-06-14">http://rs.tdwg.org/plic/terms/version/Users-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Users-2022-06-22">http://rs.tdwg.org/plic/terms/version/Users-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8876,6 +9557,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Acc. TDWG Economic Botany. The user group who recognizes the value and/or use of the plant.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/Users</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8897,11 +9582,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/Uses-2022-06-14">http://rs.tdwg.org/plic/terms/version/Uses-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/Uses-2022-06-22">http://rs.tdwg.org/plic/terms/version/Uses-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8910,6 +9595,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Ways in which species are utilized by people.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8931,11 +9620,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/UsesAtomized-2022-06-14">http://rs.tdwg.org/plic/terms/version/UsesAtomized-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/UsesAtomized-2022-06-22">http://rs.tdwg.org/plic/terms/version/UsesAtomized-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8944,6 +9633,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Ways in which species are utilized by people, including Folklore. Also applied to Animals and Fungi.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -8965,11 +9658,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/UsesManagementAndConservation-2022-06-14">http://rs.tdwg.org/plic/terms/version/UsesManagementAndConservation-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/UsesManagementAndConservation-2022-06-22">http://rs.tdwg.org/plic/terms/version/UsesManagementAndConservation-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -8980,8 +9673,12 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 			<td>Ways in which species are utilized by people, including Folklore.</td>
 		</tr>
 		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation</td>
+		</tr>
+		<tr>
 			<td>Type</td>
-			<td>Property</td>
+			<td>Class</td>
 		</tr>
 	</tbody>
 </table>
@@ -8999,11 +9696,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/UsesManagementAndConservationUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/UsesManagementAndConservationUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/UsesManagementAndConservationUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/UsesManagementAndConservationUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9012,6 +9709,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>UsesManagementAndConservation element in text block format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/UsesManagementAndConservationUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -9033,11 +9734,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/UsesUnstructured-2022-06-14">http://rs.tdwg.org/plic/terms/version/UsesUnstructured-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/UsesUnstructured-2022-06-22">http://rs.tdwg.org/plic/terms/version/UsesUnstructured-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9046,6 +9747,10 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		<tr>
 			<td>Definition</td>
 			<td>Uses in a unstructured format.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesUnstructured</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -9067,11 +9772,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/VernacularNameUseAnnotations-2022-06-14">http://rs.tdwg.org/plic/terms/version/VernacularNameUseAnnotations-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/VernacularNameUseAnnotations-2022-06-22">http://rs.tdwg.org/plic/terms/version/VernacularNameUseAnnotations-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9079,7 +9784,11 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Acc. TDWG Economic Botany. The name of the taxon must be distinguished from the name of theplant parts, the names of any processing stages, and the final product name. Names used in trade should be identified. It should also be mentioned if any vernacular name refers to more than one taxon. The use of some names may be restricted to a time of year or occasion, or have sacred connotations. The language or dialect to which the names belong should be stated along with details of the ethnic group. Care should be taken with transliteration into the Roman alphabet; if a standard system exists, use it and note which one it is.</td>
+			<td>Acc. TDWG Economic Botany. The name of the taxon must be distinguished from the name of the plant parts, the names of any processing stages, and the final product name. Names used in trade should be identified. It should also be mentioned if any vernacular name refers to more than one taxon. The use of some names may be restricted to a time of year or occasion, or have sacred connotations. The language or dialect to which the names belong should be stated along with details of the ethnic group. Care should be taken with transliteration into the Roman alphabet; if a standard system exists, use it and note which one it is.</td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/TaxonRecord/UsesManagementAndConservation/Uses/UsesAtomized/VernacularNameUseAnnotations</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -9094,25 +9803,25 @@ Uses: Ways in which species are utilized by people, including Folklore, Manageme
 A party associated with the resource. Parties have particular role. (EML-RESOURCE)<table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="plic_associatedPartyType"></a>Term Name  plic:associatedPartyType</th>
+			<th colspan="2"><a id="plic_associatedParty"></a>Term Name  plic:associatedParty</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/associatedPartyType">http://rs.tdwg.org/plic/terms/associatedPartyType</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/associatedParty">http://rs.tdwg.org/plic/terms/associatedParty</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/associatedPartyType-2022-06-14">http://rs.tdwg.org/plic/terms/version/associatedPartyType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/associatedParty-2022-06-22">http://rs.tdwg.org/plic/terms/version/associatedParty-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>associatedPartyType</td>
+			<td>associatedParty</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -9121,6 +9830,10 @@ A party associated with the resource. Parties have particular role. (EML-RESOURC
 		<tr>
 			<td>Notes</td>
 			<td><a href="https://eml.ecoinformatics.org/schema/eml-resource_xsd.html#ResourceGroup_associatedParty">https://eml.ecoinformatics.org/schema/eml-resource_xsd.html#ResourceGroup_associatedParty</a></td>
+		</tr>
+		<tr>
+			<td>Equivalent XPath</td>
+			<td>/Dataset/Metadata/dataset/associatedParty</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -9148,11 +9861,11 @@ The AncillaryData element contains information that could be an image, an audio,
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/AncillaryData-2022-06-14">http://rs.tdwg.org/plic/terms/version/AncillaryData-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/AncillaryData-2022-06-22">http://rs.tdwg.org/plic/terms/version/AncillaryData-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -9171,8 +9884,12 @@ The AncillaryData element contains information that could be an image, an audio,
 			<td>eol:dataObjectBaseType</td>
 		</tr>
 		<tr>
+			<td>Equivalent XPath</td>
+			<td>/AncillaryData</td>
+		</tr>
+		<tr>
 			<td>Type</td>
-			<td>Property</td>
+			<td>Class</td>
 		</tr>
 	</tbody>
 </table>
@@ -9190,11 +9907,11 @@ The AncillaryData element contains information that could be an image, an audio,
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2022-06-14</td>
+			<td>2022-06-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/plic/terms/version/dataObjectBaseType-2022-06-14">http://rs.tdwg.org/plic/terms/version/dataObjectBaseType-2022-06-14</a></td>
+			<td><a href="http://rs.tdwg.org/plic/terms/version/dataObjectBaseType-2022-06-22">http://rs.tdwg.org/plic/terms/version/dataObjectBaseType-2022-06-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
